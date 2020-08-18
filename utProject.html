@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usabiltiy Testing Project Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/projectsCommon.css">
+  <link rel="stylesheet" href="css/utStyle.css">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <aside>
+    <div class="imageLogo">
+      <img src="resources/UTesting/bentleyUniversity.jpg" alt="bentley university building image">
+    </div>
+    <nav id="mainNav">
+      <a href="home.html#home" onclick="setSelectedTab('home')"><i class="material-icons md-36">home</i><p>Home</p></a>
+      <a href="home.html#projects_division" class=selectedNav onclick="setSelectedTab('projects')"><i class="material-icons md-36">image</i><p>Projects</p></a>
+      <a href="home.html#about_division" onclick="setSelectedTab('about')"><i class="material-icons md-36">person</i><p>About</p></a>
+      <a href="home.html#contact_division" onclick="setSelectedTab('contact')"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+    </nav>
+    <p id="navDescription"><i>
+      <b><u>PROJECTS</u></b><br>
+      I have worked on the following projects :<br>
+      <span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><b><a href="utProject.html">•	Bentley.edu</a></span></b><br>
+      <span><a href="elderCareProject.html">•	Elder Care System</a></span><br>
+      <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
+    </i></p>
+  </aside>
+
+  <main>
+
+    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="modalMenuDiv" class="modalMenuBG">
+      <nav id="mobNav">
+        <a href="home.html#home">Home</a>
+        <a href="home.html#projects_division">Projects</a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
+        <a href="home.html#about_division">About</a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#contact_division">Contact</a>
+      </nav>
+    </div>
+
+    <!-- The Modal -->
+    <!-- <div id="modalBox" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content">
+  </div> -->
+  <div id="modalBox" class="modal">
+    <div>
+      <input type="button" class="close zoomButton" value="&times">
+    </div>
+    <div id="modalImageContainer">
+      <img id="modalImage" class="modal-content">
+    </div>
+    <div style="text-align:center;">
+      <!-- <input type="button" class="close button" value="&times"> -->
+      <input type="button" id="zoomin" class="zoomButton" value="+"/>
+      <input type="button" id="zoomout" class="zoomButton" value="-"/>
+    </div>
+  </div>
+
+  <header>
+    <img src="resources/UTesting/bentleyHero.png" alt="bentley university hero image">
+    <h1>Usability Testing on Bentley.edu</h1>
+    <p>Identifying user research proposal and conducting a usability test on the Bentley university's official website</p>
+  </header>
+  <section class="majorContents">
+    <p>This is the case of performing usability testing on the internationally recognized leading business school's official website <u><a href="https://www.bentley.edu/" target="_blank">https://www.bentley.edu/</a></u> The usability testing case is presented below:</p>
+    <ul class="pageIndex">
+      <li><a href="#researchProposal">User Research Proposal</a></li>
+      <li><a href="#testPlan">Usability Test Plan</a></li>
+      <li><a href="#moderationVideo">Moderation recorded clip</a></li>
+      <li><a href="#testReport">Usability Test Report</a></li>
+    </ul>
+    <section id="researchProposal">
+      <h3>User Research Proposal</h3>
+      <p>Before performing a usability test, it is necessary to list out why it is important to conduct one and how the test result could help achieve the business goals. The research goals and the scope of testing is also decided in this section. Basically the research proposal is documented to analyse why it is necessary to spend time and money on performing the usability test and finally to get manageral sign-off to proceed with conducting the test. Below are listed the research proposal for performing usability test on the Bentley university's website:</p>
+      <button class="accordion">Business Goals</button>
+      <div class="panel">
+        <ul class="nestedList1">
+          <li>To improve the CIO organization values</li>
+          <li>Improve the position of Bentley university in the top college ranking list  (I refer to those done by magazines such as Forbes, as well as the newspapers and institutions that has world-wide reach)</li>
+          <li>Increase student enrollment and student experience</li>
+          <li>Attract and educate students world-wide thus accomplishing the strategic goal of achieving and maintaining student success</li>
+        </ul>
+      </div>
+      <button class="accordion">Rationale for the Usability Study</button>
+      <div class="panel">
+        <p>As a leading business school, it is important to make sure that all the prospective students around the globe, gets clear information and are made aware of the various courses, enrollments and other essential details about the university at hand.</p>
+        <p>By ensuring proper exhibit of all the necessary information, the overall times spend by the prospective students for decision making can be cut-down. Ease of awareness increases their interest that leads to desire of enrollment which in turn helps in branding of the institution as well. It is also important to create easy and clear awareness for better student experience prior enrollment.</p>
+        <p>U. S. News & World Report's latest edition of America's Best Colleges 2019 ranks Bentley University #3 in the Best Regional Universities-North category for the UG programs and the MBA program stands #7 in the New England region.  By performing the usability testing, we will be able to assess ease of using the website and de-mystify the pain points where the student find it difficult to proceed or points they drops off. We could excel and keep up with all the requirements of the rankings by eliminating the possible user issues in the current official webpage.</p>
+        <p>Creating user-centric empathetic design, rectifying the current issues, makes the student decision making cycle easier, increasing the enrollments and retention, which in turn aids in improving the digital market, hence stepping ahead in achieving the university’s mission of attracting the best students world-wide.</p>
+        <p>With all the information available at hand, the number of calls for verbal enquiries and email enquiries can also be cut-down.</p>
+      </div>
+      <button class="accordion">Scope of Testing – Critical Features</button>
+      <div class="panel">
+        <p>This particular usability test limits the scope to assess the ease of gathering the basic university information and concentrates on that part of the website which provides information regarding the ‘User Experience Certificate Program’. Following are the over-view of the critical features planned to be tested :</p>
+        <ol class="nestedList1">
+          <li>Basic Information</li>
+          <ul class="nestedList1">
+            <li>Location, directions and maps of university</li>
+            <li>Lodging Facilities</li>
+            <li>Credibility – Rankings and Recognitions, Student: Faculty ratio</li>
+            <li>Courses Provided and majors available</li>
+          </ul>
+          <li>User Experience Certificate Program</li>
+          <ul class="nestedList1">
+            <li>Basic course details</li>
+            <li>Check courses and contents</li>
+            <li>Schedules of the program</li>
+            <li>Find out required courses, if any</li>
+            <li>Duration and pace of completion of the certificate program</li>
+            <li>Check on seat availability</li>
+            <li>Browse faculty details</li>
+            <li>Register for a particular course</li>
+            <li>Check on the details and contents of the boot camp courses</li>
+            <li>Check cancellation policy</li>
+            <li>Find the UX Certificate Program point of contact details</li>
+          </ul>
+        </ol>
+      </div>
+      <button class="accordion">Research Goals</button>
+      <div class="panel">
+        <p>User Experience is a hot field now and there are lots of prospective people out in the market who tries to break into the field by educating themselves from reputed schools. </p>
+        <p>This usability test ensures that the information related to the UX certificate courses provided by the Bentley University, are furnished in the website clearly and how easy the students find themselves in gathering information on each courses and the ease of comparing various courses and enrolling into those courses. </p>
+        <p>Apart from this, the basic university information that people look for beforehand viz., location, routes, credibility etc are also tested.</p>
+      </div>
+      <button class="accordion">Business Goals and Research Goals Alignment</button>
+      <div class="panel">
+        <p>All the research goals of testing, right from the basic university details extending to the enrollment for a particular course, helps students world-wide to gather knowledge all from one source on the go, eliminating their effort in placing a call-in enquiry or email enquiry, waiting for the response at a later time from the university. This creates good pre-enrollment experience to the prospective students driving them to have the good first impression about the university. </p>
+        <p>It also helps the ease of comparison of various courses hence, reducing the decision making cycle aiding easier and faster enrollments. Larger enrollments of bright students, improves the branding and rankings of the college. It also ensures the proper abidance of the University’s CIO values. </p>
+      </div>
+    </section>
+    <section id="testPlan">
+      <h3>Usability Test Plan</h3>
+      <p>The test plan describes how goals identified in research proposal phase will be achieved. This phase includes the identification of potential candidates to perform the test, listing out the user goals and then deciding on formulating the requirements for the recruitment.</p>
+      <p>Then the recruitment screeners are designed based on the scope of the usability test, the user, user goals and recruitment criteria. The checklist for planning the usability study is prepared which consists of the activities to consider during the study. The particpant briefing and informed consent form are prepared and reviewed. Based on the scope of testing, the scenarios and tasks are jotted down clearly to present to the participant to perform during the test.</p>
+      <p>Then the test analysis plan is done where decisions are made on what to test and how to collect the test data. Post-test evaluation if needed are also considered in this phase. The test plan for our case is as listed below:</p>
+      <button class="accordion">Potential Users</button>
+      <div class="panel">
+        <p>The potential candidates can be recruited for the usability testing by consulting the firm on their site users. Depending on the product/service there might be multiple potential user groups. A recruitment company can also be contacted providing the recruitment brief to find the right participants. The recruitment screeners could be used to shortlist the most appropriate candidates for the test.</p>
+        <p>In our case, the main site users can be any prospective candidate who can be a potential future student (someone who doesnt have used the site previously) for the university. </p>
+      </div>
+      <button class="accordion">User Goals</button>
+      <div class="panel">
+        <p>The main user goal would be to find the basic university information viz., location, directions, credibility and the main courses they provide. And furthermore, if they gets interested in any particular course, all the basic course information would be expected from the website viz., duration, start date, syllabus, registration, pricing and cancellation policies.</p>
+      </div>
+      <button class="accordion">Recruitment Criteria</button>
+      <div class="panel">
+      <p>Considering the scope of this usability test, the candidates should posses the following criteria’s fulfilled to participate in the usability test:</p>
+      <ul class="nestedList1">
+        <li>Must be someone who is interested in knowing about the university</li>
+        <li>Can be someone who wishes to be a future student</li>
+        <li>Better if s/he is not familiar with the university website</li>
+        <li>Can be someone new to the field of UX so that they wish to explore about the UX certificate course</li>
+        <li>Can be someone who looks for part-time courses in UX</li>
+        <li>Must be someone who is ready to spend in between $1000 and $2000 for any course</li>
+      </ul>
+    </div>
+      <button class="accordion">Recruitment Screener</button>
+      <div class="panel">
+        <p>(This recruitment screener is designed based on the scope of this usability test, the user, user goals and recruitment criteria. All the questions are expected to be answered however there are questions marked with ‘*’ which are the most important ones required to screen the candidates)</p>
+    <!-- </div> -->
+    <h4><u>Screener Questionnare</u></h4>
+      <!-- <button class="accordion">Screen Questionnare</button> -->
+      <!-- <div class="panel"> -->
+        <p>
+          1.	Do you wish to undergo any university courses in the near future?*<br>
+          &nbsp&nbsp&nbsp&nbsp Yes<br>
+          &nbsp&nbsp&nbsp&nbsp No<br>
+          &nbsp&nbsp&nbsp&nbsp No<br>
+          &nbsp&nbsp&nbsp&nbsp May Be<br><br>
+          2.	Are you a current or ex-Bentley university student?*<br>
+          &nbsp&nbsp&nbsp&nbsp Yes, please mention number of years of study    _______________<br>
+          &nbsp&nbsp&nbsp&nbsp No<br>
+          &nbsp&nbsp&nbsp&nbspWish to be a future student<br><br>
+          3.	Which category do you fall into?<br>
+          &nbsp&nbsp&nbsp&nbsp Student<br>
+          &nbsp&nbsp&nbsp&nbsp Full-time employee<br>
+          &nbsp&nbsp&nbsp&nbsp Part-time employee<br>
+          &nbsp&nbsp&nbsp&nbsp Self-employed<br>
+          &nbsp&nbsp&nbsp&nbsp Moon-lighter<br><br>
+          4.	Which mode do you prefer to register for any course at a university?*<br>
+          &nbsp&nbsp&nbsp&nbsp Online<br>
+          &nbsp&nbsp&nbsp&nbsp Call-in<br>
+          &nbsp&nbsp&nbsp&nbsp In-person<br><br>
+          5.	How long has it been since you passed out of a school?*<br>
+          &nbsp&nbsp&nbsp&nbsp  I am currently a student<br>
+          &nbsp&nbsp&nbsp&nbsp  Less than a year<br>
+          &nbsp&nbsp&nbsp&nbsp 1 year to 5 years<br>
+          &nbsp&nbsp&nbsp&nbsp 5 years to 10 years<br>
+          &nbsp&nbsp&nbsp&nbsp More than 10 years<br><br>
+          6.	Do you spend time exploring and browsing websites?*<br>
+          &nbsp&nbsp&nbsp&nbsp  Yes<br>
+          &nbsp&nbsp&nbsp&nbsp  No<br>
+          &nbsp&nbsp&nbsp&nbsp Sometimes<br>
+          &nbsp&nbsp&nbsp&nbsp Never, I hate it<br>
+          &nbsp&nbsp&nbsp&nbsp Others, please specify ______________________________________________________________<br><br>
+          7.	How much can you spend for a course?<br>
+          &nbsp&nbsp&nbsp&nbsp Under $500<br>
+          &nbsp&nbsp&nbsp&nbsp $500 to $1000<br>
+          &nbsp&nbsp&nbsp&nbsp $1000 to $2000<br>
+          &nbsp&nbsp&nbsp&nbsp More then $2000<br><br>
+          8.	How much time can you spend to educate yourself for a course?<br>
+          &nbsp&nbsp&nbsp&nbsp 10 Hours a week<br>
+          &nbsp&nbsp&nbsp&nbsp 2-4 days a month<br>
+          &nbsp&nbsp&nbsp&nbsp Flexible<br>
+          &nbsp&nbsp&nbsp&nbsp Full-time fast track<br><br>
+          Out the total 8 screener questions, 5 are required to answer and based on their response, we would proceed to gather their contact information and schedule test for them.
+        </p>
+      </div>
+      <button class="accordion">CheckList</button>
+      <div class="panel">
+        <p>The checklist for planning the usability study is prepared which consists of the activities to consider during the study.</p>
+        <ol class="nestedList1">
+          <li>Recruiting Participants<br>
+              Plan the scope of usability testing<br>
+              Identify potential users and user goals based on user research<br>
+              Specify Recruitment criteria<br>
+              Prepare recruiting screener<br>
+              Confirmation and Schedule<br>
+          </li>
+          <li>Planning the Test<br>
+              Schedule meeting room<br>
+              Set up testing environment including desktop and website setup<br>
+              Set up recording and observing essentials<br>
+              List of user tasks based on user research<br>
+              Scenarios based on user tasks, business goals, and research questions<br>
+              Get ready the pre- and post-study questions<br>
+              Determine the criteria for measuring the success <br>
+          </li>
+          <li>Pre-test actions<br>
+              Participant Briefing<br>
+              Ensure proper working of<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Microphone<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Camera<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Screen-recording essentials<br>
+              Have participant sign informed consent form<br>
+          </li>
+          <li>During the test actions<br>
+              Turn on recorders<br>
+              Provide the scenario and then the tasks to the user <br>
+              Proceed with note-taking and observing <br>
+              Use acknowledgement tokens periodically<br>
+              (Assists)What are you seeing here? What are you thinking now? Could you read the task again?<br>
+            &nbsp&nbsp&nbsp&nbsp&nbspRemember how you started the task. You were getting close.<br>
+          </li>
+          <li>Post-test actions<br>
+              Give participants the post-test questionnaire to fill<br>
+              Ask them their experience on using the website<br>
+              Give participant payment<br>
+              Have participant sign receipt for payment<br>
+              Turn off recorder and save recording <br>
+          </li>
+          <li>After completing the test session<br>
+              Debrief all that observations, notes and records<br>
+              Upload the video and save all the other documents at a common location<br>
+          </li>
+          <li>Data Analysis Phase<br>
+              Determine final list of positive findings, usability issues<br>
+              Develop recommendations for improvement <br>
+              Prepare summary of findings and recommendations<br>
+              Present and distribute summary of findings and recommendations<br>
+              Send thank you notes<br>
+          </li>
+        </ol>
+      </div>
+      <button class="accordion">Participant Briefing</button>
+      <div class="panel">
+        <p>The participant briefing includes, what is read to a participant prior to the study to make sure they know what to expect. Below is the one used in our case :</p>
+        <p> Welcome & Introduction</p>
+        <ul class="nestedList1">
+          <li>I will be running this session with you today. First of all, thank you so much for agreeing to participate and for turning up today.  </li>
+          <li>If you don’t mind I am going to read the next couple of things from my script to make sure I cover everything</li>
+          <li>I will give you a little briefing on what will be done and what is expected </li>
+        </ul>
+        <p> About the test</p>
+        <ul class="nestedList1">
+          <li>Here we will now be testing the Bentley University’s official website to find the ease with which prospective students can access information.</li>
+          <li>We are asking you to serve as an evaluator of the website by completing a set of tasks. </li>
+          <li>Our goal is to see how easy or difficult you find in using the site. </li>
+          <li>I did not design the websites, so be open in specifying what you exactly feel like. You won’t hurt my feelings.</li>
+          <li>The test would last from 30-40mins and you can take breaks in between, if you want</li>
+          <li>If you have any questions, feel free to shoot it anytime</li>
+        </ul>
+        <p> Review Informed Consent </p>
+        <ul class="nestedList1">
+          <li>Before we start there are some paper works to be completed – Consent Form.</li>
+          <li>We will be recording the session </li>
+          <li>Recordings are used for research purposes only </li>
+          <li>There may be some people watching </li>
+          <li>Your name will not be associated with any data collected </li>
+          <li>Your participation is voluntary and you have the right to stop at any time without penalty </li>
+        </ul>
+        <p> My role </p>
+        <ul class="nestedList1">
+          <li>Neutral observer taking notes </li>
+          <li>I am not supposed to help you on the tasks but from time to time I may ask you to clarify what you have said or what made you do something  </li>
+          <li>Otherwise I will remain silent</li>
+        </ul>
+        <p> Your role </p>
+        <ul class="nestedList1">
+          <li>Be yourself, have fun – you can’t do anything wrong! So please feel free to let me know at any time if there’s something you like, dislike, if you’re confused, etc. </li>
+          <li>Try to complete the tasks as if you were doing this at home </li>
+          <li>It is the software we are testing, not you. Any difficulties you may have are because it wasn’t designed in a way that makes sense to you. </li>
+          <li>I promise you won’t hurt my feelings.</li>
+          <li>Be candid, you are helping others by shaping the product at an early stage </li>
+        </ul>
+        <p> The tasks </p>
+        <ul class="nestedList1">
+          <li>Read each task aloud </li>
+          <li>Describe your steps, what you are looking for, give a “narration,” etc. </li>
+          <li>Your comments are very important to us – we are equally interested in what you like and don’t like about the product. So please talk me through the steps you do </li>
+          <li>You can ask for clarification if needed </li>
+          <li>Spend as little or as much time as you normally would, when doing similar tasks </li>
+          <li>Let me know when you have completed the task or have got stuck in the middle  </li>
+          <li>It is ok if you cannot complete each task, and we may not get to every task </li>
+          <li>Once again, it is the software we are testing, not you</li>
+        </ul>
+        <p> Any questions before we begin?</p>
+      </div>
+      <button class="accordion">Informed Consent Form</button>
+      <div class="panel">
+        <p>This is a written version of the participant briefing to make the participant sign to acknowledge they understand what to expect. Below is the one I have used for this study:</p>
+        <p><b>Date</b>: 03/03/2019</p>
+        <p>Thank you for agreeing to participate in the efforts to make the Bentley University’s official website easier to learn and use. This Consent Agreement with us will describe the types of activities you may be participating in, the types of information we will be collecting during these activities, and how we will use this information. </p>
+        <p><b>Purpose</b>: Bentley University’s technology teams is interested in learning more about the usability of its current official website, and re-engineer the pain points, if any. </p>
+        <p><b>Participation Methods</b>: Your participation may include:<br>
+          • Discussing your experience with the current university website in an interview format <br>
+          • Testing the usability by performing specific tasks on the website<br>
+        </p>
+        <p><b>Information Collected</b>: Two types of information will be collected:</p>
+        <p>• During discussions and interviews, we will record the information that you share, including a voice record. Your name will not be included on the audio tape, the questionnaire, or on the notes we take during the discussions and interviews. </p>
+        <p>• If you participate in usability tests of the current Bentley university website, the technical team will observe your screen activity as you perform tasks and record information about how you use the product and what you say about it, as you are using it. The technical team may also ask you to rate various aspects of the product’s usability using a numerical or other scale. </p>
+        <p>In addition, the technical team may electronically record your verbal statements and interactions with the product including the mouse and keyboard. We will inform you before we begin to record. Your name and other identifying information will not be included with these ratings, on the notes that we take during the test or with your verbal statements. </p>
+        <p>Your participation in this study is completely voluntary. You may withdraw from the study at any time without penalty. </p>
+        <p>If you have questions, you may ask them at any time before or during the study. </p>
+        <p>Please sign below to indicate your understanding and acceptance of this letter of understanding. </p>
+        <p>We appreciate your participation.</p>
+        <p><b>Print your Name</b> 		_______________________________________________</p>
+        <p><b>Signature</b>			_______________________________________________</p>
+      </div>
+      <button class="accordion">Scenario(s) and Task(s)</button>
+      <div class="panel">
+        <p>Below are the scenarios and tasks decided based on our test scope. It is printed out and handed over to the participant during the test.</p>
+        <p><b>Scenario</b>: You are a techie who has just now switched into a project as a UX designer. As it is a new field, other than the area of your expertise, you decide to look for any courses available to educate yourself in UX. From your friend, you heard about Bentley University’s UX certification Program and so you are trying to explore the University’s official website to gather the details for the same.</p>
+        <p><b>Task 1</b>: Find the location and directions of the university from your residence</p>
+        <p><b>Task 2</b>: Check for any lodging facility details listed</p>
+        <p><b>Task 3</b>: Check for the university’s credibility - Rankings and Recognitions</p>
+        <p><b>Task 4</b>: Check the various course details for the User Experience Certificate Program (course names, schedules, description of each courses)</p>
+        <p><b>Task 5</b>: Check for the duration of the certificate program</p>
+        <p><b>Task 6</b>: Check for the faculty details</p>
+        <p><b>Task 7</b>: Check for the course fee </p>
+        <p><b>Task 8</b>: Check for the cancellation policy for certification program </p>
+        <p><b>Task 9</b>: Check for the seat availability of each courses </p>
+        <p><b>Task 10</b>: Check for the certification program POC contact details </p>
+      </div>
+      <button class="accordion">Analysis Plan</button>
+      <div class="panel">
+        <p>In this phase, the test analysis plan is designed where decisions are made on what to test and how to collect the test data. Below is the analysis panfor our study:</p>
+        <p>The test session is intended for 30 minutes and we are expecting 5-6 tasks to be completed.</p>
+        <p>The following are planned to be recorded :<br>
+          •	Website screen in which the user performs the task. <br>
+          •	The participant himself/herself while performing the task<br>
+        </p>
+        <p>We will be interested in pointing out the parts of the tasks where the participants look satisfied or frustrated. The task we design will not be difficult and will be achievable in reasonable amount of time. If the user is not able to achieve the task in a reasonable amount of time, say 5 minutes, then we may ask him/her to move on to the next task and will note the task as ‘Not Completed’.</p>
+        <p>For each task, mainly we would measure the <br>
+          •	Task completion status<br>
+          •	Any occurrence of error/assists <br>
+          •	Time taken to complete each task<br>
+        </p>
+        <p>And finally a System Usability Scale (SUS) is used to find the overall experience of the user in performing the task on the website. </p>
+        <p>Based on the SUS evaluation, we would also have a conversation with the participant which includes:<br>
+          •	Overall impression of the website<br>
+          •	Likes about the site<br>
+          •	Dislike about the site<br>
+          •	Describe the site in a couple of sentence to a colleague or friend<br>
+        </p>
+        <p>A summary of the findings illustrating the key points and findings will then be created with screenshots of points indicating the pain points.   </p>
+      </div>
+      <button class="accordion">Post-Test Questionnaire</button>
+      <div class="panel">
+        <p>I have planned for a SUS evaluation questionnaire after the usability test. It helps to find how easy it is to use the website to achieve the user goal (tasks provided to the participant)</p>
+        <img class="openOnClick" src="resources/UTesting/SUS.png" alt="SUS evaluation form">
+      </div>
+    </section>
+    <section id="moderationVideo">
+      <h1>Moderation Sample Video</h1>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/ybVpSq7Bee4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="testReport">
+      <h1>Usability Test Report</h1>
+      <p>The text plan was designed with a total of 10 tasks and the session as meant to be lasting for a maximum of 40mins. Due to time constraint, we were able to test only 7 tasks. </p>
+      <h4><u>Task-wise Findings </u></h4>
+      <p><b>Task 1 :</b> Find the location and directions of the university from your residence
+        <br>To find directions, there was no option or link found from the page
+        <br>Driving Directions were in written format
+        <br>Comments from user : Oh Gosh! Lot to read
+        <br>Recommendation : Link to Google map
+      </p>
+      <p><b>Task 2 :</b> Check for any lodging facility details listed
+        <br>User had difficulty in finding the location and nearest lodging facility
+        <br>Recommendation : Provide map to compare distance and direction from the university
+      </p>
+      <p><b>Task 3 :</b> Check for the university’s credibility - Rankings and Recognitions
+        <br>For rankings and recognitions, user expected it to be in the ‘About Bentley’ page. So there was an error of navigating to the unintended pages by the user. The side bar was not visible enough to point out the ranks and recognition option.
+      </p>
+      <p><b>Task 4 :</b>  Check the various course details for the User Experience Certificate Program (course names, schedules, description of each courses)
+        <br>To find the UX course details, it was not possible to find the UX certification program page from the home page of the website. Hence the moderator had to manually navigate to the UX certificate home page before the task was accomplished. After proceeding to the page, it was easier to find the course details thereafter.
+      </p>
+      <p><b>Task 5 :</b> Check for the duration of the certificate program
+        <br>Completion dates required lots of readings and took more time than expected resulting in task failure
+      </p>
+      <p><b>Task 6 :</b> Check for the faculty details
+        <br>Faulty details were easy to find since it was right on the top primary navigation bar.
+      </p>
+      <p><b>Task 7 :</b> Check for the course fee
+        <br>Course fees were difficult to find and the user was searching for 'Payments' tab
+      </p>
+      <h4><u>Summary of Completion, Errors/Assists, Time on Task </u></h4>
+      <iframe width="90%" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=408600C3A3543E0E%211746&authkey=%21AJnM8VH8bgJS0ok&em=2&wdAllowInteractivity=False&ActiveCell='Usability%20Test%20Results'!A1&wdInConfigurator=True"></iframe>
+      <h4><u>Overall Comments and Ratings </u></h4>
+      <ul class="nestedList1">
+        <li>The website required more reading to find information which the user found is hard to do.</li>
+        <li>The navigation bar was changing for multiple pages resulting in confusion loosing the user making it hard to keep track of where they were in the site.</li>
+        <li>The overall Site organization and information architecture missed many of the key information/terms which are frequently looked for.</li>
+      </ul>
+      <h4><u>SUS Rating by the user</u></h4>
+      <img class="openOnClick" src="resources/UTesting/SUS-filled.jpg" alt="filled SUS form">
+      <h4><u>Likes and dislikes of the participant</u></h4>
+      <p style="line-height:2em;line-height:2rem;">
+        Following are the post SUS user conversation notes :
+        <br><b>Liked Most :</b>  Overall website looks official with elegant color choices and clear fonts.
+        <br><b>Liked Least :</b> The website involves lot of readings. Information could be organized and visualized in a way so as to reduce the effort of reading enabling the user to spot required information with less effort and time.
+      </p>
+      <h4><u>Overall Recommendations </u></h4>
+        <ul class="nestedList1" style="line-height:1.25em;">
+          <li>Maps can be provided where ever possible for easy access</li>
+          <li>Course details can be listed right at the home page for easy navigation</li>
+          <li>Tables can be provided to display courses for each schedule</li>
+          <li>Rankings can be provided at the home page itself so as to make aware the university’s credibility</li>
+          <li>Information could be organized and visualized in a way so as to reduce the effort of reading enabling the user to spot required information with less effort and time</li>
+        </ul>
+    </section>
+
+  </section>
+</main>
+<footer>
+  <div class="bottom-bar">
+    <span style="float: left;">&copy 2019 | All right reserved.</span>
+    <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
+  </div>
+  <div class="bottom-bar-mobile" style="text-align:center;">
+    <p>&copy 2019 | All right reserved.</p>
+    <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+  </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/commonScript.js"></script>
+<script src="js/accordionScript.js"></script>
+</body>
+</html>

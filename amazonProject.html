@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <title>Amazon Project Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/projectsCommon.css">
+  <link rel="stylesheet" href="css/amazonStyle.css">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <aside>
+    <div class="imageLogo">
+      <img src="resources/amazon/amazon_logo.jpg" alt="amazon logo">
+    </div>
+    <nav id="mainNav">
+      <a href="home.html#home" onclick="setSelectedTab('home')"><i class="material-icons md-36">home</i><p>Home</p></a>
+      <a href="home.html#projects_division" class=selectedNav onclick="setSelectedTab('projects')"><i class="material-icons md-36">image</i><p>Projects</p></a>
+      <a href="home.html#about_division" onclick="setSelectedTab('about')"><i class="material-icons md-36">person</i><p>About</p></a>
+      <a href="home.html#contact_division" onclick="setSelectedTab('contact')"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+    </nav>
+    <p id="navDescription"><i>
+      <b><u>PROJECTS</u></b><br>
+      I have worked on the following projects :<br>
+      <span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>
+      <span><b><a href="amazonProject.html">•	Amazon.com</a></b></span><br>
+      <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><a href="elderCareProject.html">•	Elder Care System</a></span><br>
+      <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
+    </i></p>
+  </aside>
+
+  <main>
+
+    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="modalMenuDiv" class="modalMenuBG">
+      <nav id="mobNav">
+        <a href="home.html#home">Home</a>
+        <a href="home.html#projects_division">Projects</a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
+        <a href="home.html#about_division">About</a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#contact_division">Contact</a>
+      </nav>
+    </div>
+
+    <!-- The Modal -->
+    <!-- <div id="modalBox" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" class="modal-content">
+  </div> -->
+  <div id="modalBox" class="modal">
+    <div>
+      <input type="button" class="close zoomButton" value="&times">
+    </div>
+    <div id="modalImageContainer">
+      <img id="modalImage" class="modal-content">
+    </div>
+    <div style="text-align:center;">
+      <!-- <input type="button" class="close button" value="&times"> -->
+      <input type="button" id="zoomin" class="zoomButton" value="+"/>
+      <input type="button" id="zoomout" class="zoomButton" value="-"/>
+    </div>
+  </div>
+
+  <header>
+    <img src="resources/amazon/amazonHero.png" alt="amazon hero image">
+    <h1>UX CaseStudy on Amazon.com</h1>
+    <!-- <p class="heroText">Analyzing the amazon.com website for their compatibility on human factors and user engagement measurement </p> -->
+    <p>Analyzing amazon.com for its compatibility with human factors considerations and user engagement measurement techniques</p>
+  </header>
+  <section class="majorContents">
+    <h3>A short summary of human factors and user experience design</h3>
+    <p>The user experience is a human experience. The human interaction consists of 2 stages viz., sensory perception and cognitive perception. The sensory perception consists of processing information through the sensory system and the pre-attentive processing. The cognitive perception consists of 4 phases of information processing viz., mental models, cognitive skills, memory system and emotional evaluation.</p>
+    <p>This is a case study evaluating amazon.com, world wide e-commerce giant, a one stop web app/site that enables the user to browse, search, view product information and finally purchase products online, across these human factors and user engagement measurement techniques. </p>
+    <h3>Human Factors Based Analysis</h3>
+    <p>The design of the e-commerce website is intended as a
+      <!-- <span class="helpTextPopUp">
+        value sensitive design.
+        <span class="helpText" style="width:25em;height:4em;left:-12em">
+          Value Sensitive Design (VSD) is a theoretically grounded approach to the design of technology that accounts for human values in a principled and comprehensive manner.
+        </span>
+      </span> -->
+      <abbr title="Value Sensitive Design (VSD) is a theoretically grounded approach to the design of technology that accounts for human values in a principled and comprehensive manner.">value sensitive design.</abbr>
+    It has a well informed design with all the well known conventions and mental model of users fulfilled to a great extend. The services including  proper order placement and shipping/return procedures makes the site intuitive for all users which enables it to be a part of people’s everyday life. It fits the user’s expectation and the business goals, hence increasing in growth and number of customers day by day.</p>
+    <p>The site has gained the customers credibility to a huge extend. The information processing model is also followed, enabling clear and simple detection, retention and recall of information and workflows. The site as a whole appears to be easily learnable and predictable.</p>
+    <p>Based on the country selected, translated pages with products and deals specific to that particular country are listed which makes perfect sense.[Ref <abbr title="hover over the images to see its name">Figure1</abbr>] The site is responsive and it has a dedicated mobile application that enables all the necessary features in a purchase process, enabling customers to use it on the go.</p>
+    <p>The site is accessible[Ref <abbr title="hover over the images to see its name">Figure 2</abbr>] and it provides a detailed help guide on the same: </p>
+    <div class="imgFlex">
+      <img title="Figure 1" class="openOnClick" src="resources/amazon/amazonCS11.png" alt="Figure 1">
+      <img title="Figure 2" class="openOnClick" src="resources/amazon/amazonCS1.jpg" alt="Figure 2">
+    </div>
+    <!-- <iframe src="https://www.amazon.com/b?ie=UTF8&node=15701038011"></iframe> -->
+    <h4><u>Evaluation based on the ‘Human Sensory System Capabilities'</u></h4>
+    <p>For less effort to human visual senses, tha minimum color contrast is better to be in the ratio of 3:1 and to avoid eye fatigue, closer grids shouldn't be of hgh contrast. In that aspect, the website is designed with a light colored background throughout which corresponds to elegant Swiss design format with the high contrast black letters to display the various product information in the body copy.[Ref <abbr title="hover over the images to see its name">Figure 3</abbr>] The navigation bar goes with a black background with legible white alphabets. </p>
+    <p>The font used is legible, professional and clear to interpret. The font sizes are chosen to be hierarchial which help in clear distinction between headings and descriptions.</p>
+    <p>Each item on a particular category is placed on separate white grids in the body which goes with a light grey background which gives an organized arrangement of items that enables easier browsing and avoids eye fatigue. All the item images are placed on a white background so as to gain more visibility of the product. It also gives high contrast to gain immediate customer focus and attention. </p>
+    <div class="imgFlex">
+      <img title="Figure 3" class="openOnClick" src="resources/amazon/amazonCS2.png" alt="Figure 3">
+      <img title="Figure 4" class="openOnClick" src="resources/amazon/amazonCS3.png" alt="Figure 4">
+    </div>
+    <p>As in <abbr title="hover over the images to see its name">Figure 4</abbr>, the product specification page also follows a common format and information patterns which enhances learnability. The images and videos for that product is placed in the left hand side which would be noticed first followed by the item description, basic details including the prices are placed in the center moving to the right hand side where the ‘add to cart’ widget is placed. Scrolling down gives more information which includes ‘similar items’ or recommendations aiding to more choices and comparison followed by the customer ratings and reviews. </p>
+    <p>Another important point is that the website layout follows the <abbr title="It is a mathematical ratio found in nature equals 1:1.618 which can be used in design to create pleasing and natural looking composition.">golden ratio</abbr> which is aesthetically pleasing to human eyes thereby positively influencing the visual perception. The 'Add To Cart' button is placed right at the place where human eyes tend to easily spot it and this natural ratio aids people to easily understand the layout and find information with minimal or no effort.</p>
+    <h4><u>Evaluation based on ‘Human Pre-attentive Processing Abilities’</u></h4>
+    <p>The overall website design clearly implicates a proper structure and establishes patterns in the minds of the users. It is consistent across product pages. All the essentials are placed right in the primary navigation menu. As shown in <abbr title="hover over the images to see its name">Figure 5</abbr>, the ‘departments’ option right in front of the page, details the taxonomy and gives an overall idea of all the various products and categories available in one click. </p>
+    <div class="imgFlex">
+      <img title="Figure 5" class="openOnClick" src="resources/amazon/amazonCS4.png" alt="Figure 5">
+      <img title="Figure 6" class="openOnClick" src="resources/amazon/amazonCS5.png" alt="Figure 6">
+    </div>
+    <p>There is a consistent grid pattern with lesser contrast in color to its background. Similar items are clustered together to form easily searchable groups/categories thus making the design easy to learn and understand.  </p>
+    <p>As seen in <abbr title="hover over the images to see its name">Figure 6</abbr>, the homepage shows various items, categories and recommendations without names or descriptions given right away. The bare minimum information is displayed on various products to reserve the real estate to accommodate lot of products in one horizontal row. This could probably be reduced by introducing a ‘view all’ button that takes the user to a new page listing more of similar products this reducing information overload and crowded data</p>
+    <h4><u>Evaluation based on the ‘Mental models’</u></h4>
+    <p>People usually prefer to search whatever they wish for. The most frequently used 'search bar' is placed right at the top. The search is also optimized for exact results and it auto-fills what user types in and the results are personalized. As in <abbr title="hover over the images to see its name">Figure 7</abbr>, the search bar has categories in it which helps to search for an exact match based on product catgories. The search bar is prominent on every page making it easier to filter, refine, and view search results in an open and readable fashion.</p>
+    <p>The various navigation taxonomies are designed in a fashion similar to the architecture of a retail outlet.With this basic store layout experience, people find it easy to navigate through the various departments on the website. </p>
+    <p>As shown in <abbr title="hover over the images to see its name">Figure 8</abbr>, the shopping process is also made simple and easy by placing ‘add to cart’ icon which can be viewed anywhere from the website at the top right hand side of the navigation bar. People can continue adding items to the cart while browsing through the website and the items in the cart are displayed as a list for checkout. The total amount and quantity are also displayed on the right side bar which aids easy manipulation. </p>
+    <div class="imgFlex">
+      <img title="Figure 7" class="openOnClick" src="resources/amazon/amazonCS6.png" alt="Figure 7">
+      <img title="Figure 8" class="openOnClick" src="resources/amazon/amazonCS7.png" alt="Figure 8">
+    </div>
+    <p>The checkout procedure is laid out in a numbered step by step process which makes it more organized and easy to follow for the first time customers. This numbered process doesn’t annoy the expert users as well since it doesn’t hinder or reduce the speed of order placement by any means.    </p>
+    <p>The return and cancellation procedure is also same as that done at a retail outlet which again matches the mental model. Feedback in the form of tickets and receipt numbers are provided which reduce anxiety of the customers when requesting for a refund.  </p>
+    <h4><u>Evaluation based on the ‘Human Cognitive skills’</u></h4>
+    <p>The font used is uniform throughout the website which appears to be professional and legible. As shown in <abbr title="hover over the images to see its name">Figure 1</abbr> and <abbr title="hover over the images to see its name">Figure 6</abbr>, high contrast is used in the font color and image color to gain attention and easy identification. The items in the shopping cart are printed in blue which might cause issues for older customers. But the white background gives the optimal contrast required to distinguish. Proper spacing is provided between lines that doesn’t congest the data. Proper organization in grids for various categories and items are appreciable and aids image comparisons. </p>
+    <p>The larger sized headings provide a good scent of information right away for the customers. The numbered items in the shopping cart list aids in easy manipulation. The department menu placed upfront in the home page depicts the sitemap and product display structure.</p>
+    <p>As shown in <abbr title="hover over the images to see its name">Figure 9</abbr>, under each product, there are sections that provide a list of similar items, suggestions and offers, complementary products are displayed, which also brings in serendipity. The same effect is achieved from the homepage where the deals and featured items are displayed. All these increase the likelihood of visitors making a purchase.</p>
+    <div class="imgFlex">
+      <img title="Figure 9" class="openOnClick" src="resources/amazon/amazonCS8.png" alt="Figure 9">
+      <img title="Figure 10" class="openOnClick" src="resources/amazon/amazonCS9.png" alt="Figure 10">
+    </div>
+    <p>As shown in <abbr title="hover over the images to see its name">Figure 10</abbr>, comparison tables are provided for certain items but not for all. It is not possible to customize the products to compare which is a disadvantage. For custom specific items, users have to open multiple tabs for comparison which is a huge issue as far as usability is concerned. </p>
+    <p>There can be a provision for each product where customers can choose other similar items for easy comparison. The comparison results could be tabular with the major differences and similarities pointed out. An intelligent system can be maintained where each of the products compared are ranked and recommended. This would drastically reduce the purchase time thus hiking the purchase rates.</p>
+    <p>As shown in <abbr title="hover over the images to see its name">Figure 11</abbr>, the filter options are provided on the left side bar for each category but to clear the search filters, the options provided are too small and scattered which could make it difficult to manipulate. The filter criteria could be specified all together in one area with a remove button on its side so that users can easily go through them and modify accordingly in a much more easier and efficient way.</p>
+    <div class="imgFlex">
+      <img title="Figure 11" class="openOnClick" src="resources/amazon/amazonCS10.png" alt="Figure 11">
+      <img title="Figure 12" class="openOnClick" src="resources/amazon/amazonCS12.png" alt="Figure 12">
+    </div>
+    <p>At times there appears no feedback on the filter and sort option which confuses users. As in <abbr title="hover over the images to see its name">Figure 12</abbr>, the filters in the’ user rating’ section are also not visible and there is a high chance of people missing it. It would be better to place the user review filter option with a larger font size, left aligned rather than on the right side, making it more visible and easy to read. </p>
+    <h4><u>Evaluation based on the ‘Human Memory systems’</u></h4>
+    <p>The overall design of the website is pretty much straight forward. For first time users, the item search or browse option is available upfront and the check out process is a definitive step by step numbered process which doesn’t offer much scope for confusion.</p>
+    <p>The design and site organization is learnable and easily recallable. Click feedbacks are provided wherever possible. Post order placement, receipts and invoice details are made easily retrievable from the orders page. The package tracking facility with mobile messages and email notifications makes it easier for estimating the arrival. The approximate arrival dates are provided upfront at the product page which helps in easier arrangements for collection.</p>
+    <p>The information architecture and taxonomies provide clear cut navigation to various product pages, order history, re-order page, cart and other highly searched features thus not demanding more working memory. </p>
+    <h4><u>Evaluation based on the ‘Human Emotions ’</u></h4>
+    <p>The straight forward and simple design help keep anxiety levels low. The 'free pick-up on returns' is thoughtful in the absence of physical store. The user reviews and rating for each product are arranged in such a way that the trust worthy comments are placed at the top. This ensures that the product is ranked properly for accurate decision making.</p>
+    <p>But ‘contacting the customer care’ option is not placed highly visible which can cause anxiety from the thoughts of ‘what if I clicked something and broke the system or lost money’ by first time or occasional users. Customer care numbers or instant chat bots could be added which gains the customer confidence in experimenting and exploring the website more. The more people browse, the more they buy, more the revenue for the company. </p>
+    <p>The company as an e-commerce giant deserves to win based on its usability and it works on constantly improving the site experience based on the user expectation and their mental models.  </p>
+    <h3>User Engagement Measurement and Interpretation</h3>
+    <!-- <p><span class="helpTextPopUp">
+      SUS
+      <span class="helpText" style="width:25em;height:4em;left:0">
+        The <b>System Usability Scale (SUS)</b> is a standardized metric for measuring the usability of a website or other interactive system
+      </span>
+    </span> -->
+    <p><span><abbr title="The System Usability Scale (SUS) is a standardized metric for measuring the usability of a website or other interactive system">SUS</abbr></span>
+    and
+    <!-- <span class="helpTextPopUp">
+      NPS
+      <span class="helpText" style="width:25em;height:4em;left:-2em">
+        The <b>net promoter score (NPS)</b> is a metric that quantifies how many more people are likely to strongly recommend your site or product compared to those likely to criticize it.
+      </span>
+    </span> -->
+    <span><abbr title="The net promoter score (NPS) is a metric that quantifies how many more people are likely to strongly recommend your site or product compared to those likely to criticize it.">NPS</abbr></span>
+    could be used for an overall evaluation. For example, SUS could be used after each transaction to find how easy it is to use the website for online ordering and NPS to find the likelihood of the user recommending the website, combined with the question ‘Have you recommended Amazon.com in the past 6 months’ for more reliable results. </p>
+    <p>
+      <!-- <span class="helpTextPopUp">
+        Kano Model
+        <span class="helpText" style="width:25em;height:8em;left:-2em">
+          The <b>Kano Model</b> is used to make design decision (and feature prioritization) on which features to include in a product for improved customer satisfaction. It gets answer for how would the user feel if a particular feature is included or not included. Each feature is rated by the user to arrive at a metric. There will be no moderator bias.
+        </span>
+      </span> -->
+      <span><abbr title="The Kano Model is used to make design decision (and feature prioritization) on which features to include in a product for improved customer satisfaction. It gets answer for how would the user feel if a particular feature is included or not included. Each feature is rated by the user to arrive at a metric. There will be no moderator bias.">Kano Model</abbr></span>
+      could be used to evaluate additional feature inclusion. For example, including a 24*7 chatbot service could be evaluated based on the metric from the user results and could be considered and prioritized.</p>
+      <p>
+        <!-- <span class="helpTextPopUp">
+          Eye tracking
+          <span class="helpText" style="width:35em;height:11em;left:-2em">
+            <b>Eye tracking</b> is the measurement of eye activity. It infers cognitive state which people can’t answer by themselves. It helps to collect objective data that determines  if users look at calls to action on an interface, where they look, how long they look, what they don’t look. Results could be heat maps and gaze plots which provides no of fixations, order of gaze and the numerical equivalent spreadsheets could be used to find the first point looked at, the areas of interest etc, but the result data could be complicated to interpret. There are no standards but it finds bias from self report. For more reliable results, it is always best to combine eye tracking with other data.
+          </span>
+        </span> -->
+        <span>
+          <abbr title="<b>Eye tracking</b> is the measurement of eye activity. It infers cognitive state which people can’t answer by themselves. It helps to collect objective data that determines  if users look at calls to action on an interface, where they look, how long they look, what they don’t look. Results could be heat maps and gaze plots which provides no of fixations, order of gaze and the numerical equivalent spreadsheets could be used to find the first point looked at, the areas of interest etc, but the result data could be complicated to interpret. There are no standards but it finds bias from self report. For more reliable results, it is always best to combine eye tracking with other data.">
+            Eye Tracking
+          </abbr>
+        </span>
+        could be used to evaluate how intuitive the website is, for all kinds of users (novice, occasional, frequent/expert). For example, heat maps and gaze plots would make it easy to analyze the ease with which the user searches and finds a product, may it be using the search feature or navigating to the product from the categories. The results determine if an information architecture re-design is required and help find out the peak points of user attention so as to place the main call-to-action items. </p>
+        <p>
+          <!-- <span class="helpTextPopUp">
+            LEM tool
+            <span class="helpText" style="width:25em;height:5em;left:-2em; top:-6em;">
+              <b>LEM tool </b> is a web-based self-report tool used to uncover the emotional impact of a website. It consists of 8 web relevant emotion wheel relating to aesthetics, usability and liking of a website.
+            </span>
+          </span> -->
+          <span><abbr title="LEM tool is a web-based self-report tool used to uncover the emotional impact of a website. It consists of 8 web relevant emotion wheel relating to aesthetics, usability and liking of a website.">LEM tool</abbr></span>
+          could be used to check the emotional responses of the users when using the website to measure its aesthetics, usability and liking. It could provide deep insights on specific areas from the website, with the emotion they produce in the user's mind for appropriate re-design.</p>
+        </section>
+      </main>
+      <footer>
+        <div class="bottom-bar">
+          <span style="float: left;">&copy 2019 | All right reserved.</span>
+          <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
+        </div>
+        <div class="bottom-bar-mobile" style="text-align:center;">
+          <p>&copy 2019 | All right reserved.</p>
+          <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+        </div>
+      </footer>
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="js/commonScript.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,78 @@
+/*amazonStyle.css*/
+header img{
+  -webkit-filter: opacity(10%) blur(3px);
+}
+.majorContents img{
+  width: 25%;
+  margin: 2em auto;
+  margin: 2rem auto;
+  display: block;
+  transition:1s;
+  cursor: pointer;
+}
+.majorContents img:hover, .imgFlex img:hover{
+transform: scale(1.03);
+}
+.imgFlex{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.imgFlex img{
+  flex:1;
+  object-fit:fill;
+  overflow: hidden;
+  padding: .5% 1%;
+  display: inline-block;
+  transition:1s;
+  cursor: pointer;
+  /* width:100%; */
+}
+@media (max-width: 601px) {
+  main{
+    margin:0;
+    width:100%;
+    /* top:0;
+    left:0; */
+  }
+  #hamburgerBtn{
+    position:absolute;
+    padding: 0;
+    margin: .5em;
+    margin: .5rem;
+  }
+  header{
+    position:relative;
+    margin: 0;
+    width: 100%;
+    height:auto;
+  }
+  header > img{
+    height: 100%;
+    width:100%;
+  }
+  header > h1{
+    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin: 0 0 0 3em;
+    margin: 0 0 0 3rem;
+
+    padding: .5em 0 1em 0;
+    padding: .5rem 0 1rem 0;
+  }
+  header > p{
+    margin: 1em 2em;
+    margin: 1rem 2rem;
+  }
+  .majorContents{
+    position:static;
+  }
+  .majorContents > img{
+    width:100%;
+  }
+  .imgFlex img{
+    flex:auto;
+    width:100%;
+  }
+}

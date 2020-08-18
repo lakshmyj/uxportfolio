@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elder Care Project Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/projectsCommon.css">
+  <link rel="stylesheet" href="css/elderCareStyle.css">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <aside>
+    <div class="imageLogo">
+      <img src="resources/elderCare/ElderCareLogo.jpg" alt="elder care system logo">
+    </div>
+    <nav id="mainNav">
+      <a href="home.html#home" onclick="setSelectedTab('home')"><i class="material-icons md-36">home</i><p>Home</p></a>
+      <a href="home.html#projects_division" class=selectedNav onclick="setSelectedTab('projects')"><i class="material-icons md-36">image</i><p>Projects</p></a>
+      <a href="home.html#about_division" onclick="setSelectedTab('about')"><i class="material-icons md-36">person</i><p>About</p></a>
+      <a href="home.html#contact_division" onclick="setSelectedTab('contact')"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+    </nav>
+    <p id="navDescription"><i>
+      <b><u>PROJECTS</u></b><br>
+      I have worked on the following projects :<br>
+      <span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><b><a href="elderCareProject.html">•	Elder Care System</a></b></span><br>
+      <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
+    </i></p>
+  </aside>
+
+  <main>
+
+    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="modalMenuDiv" class="modalMenuBG">
+      <nav id="mobNav">
+        <a href="home.html#home">Home</a>
+        <a href="home.html#projects_division">Projects</a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
+        <a href="home.html#about_division">About</a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#contact_division">Contact</a>
+      </nav>
+    </div>
+
+  <div id="modalBox" class="modal">
+    <div>
+      <input type="button" class="close zoomButton" value="&times">
+    </div>
+    <div id="modalImageContainer">
+      <img id="modalImage" class="modal-content">
+    </div>
+    <div style="text-align:center;">
+      <!-- <input type="button" class="close button" value="&times"> -->
+      <input type="button" id="zoomin" class="zoomButton" value="+"/>
+      <input type="button" id="zoomout" class="zoomButton" value="-"/>
+    </div>
+  </div>
+
+  <header>
+    <img src="resources/elderCare/ElderCareBG.jpg" alt="elder care hero image">
+    <h1>UX in Elder Care Support System</h1>
+    <p>Performing user and task analysis including persona definition and feature prioritisation for an elder care support system</p>
+  </header>
+  <section class="majorContents">
+    <p>This project is intended to analyze the insights on the creation of an elder care support system from scratch. The information analysis enables to
+      <ul class="nestedList1">
+        <li>Better understand the user’s goals</li>
+        <li>Better understand the user’s goals</li>
+        <li>Work that support these goals</li>
+        <li>Task structure</li>
+        <li>Task flexibility</li>
+        <li>Information requirements</li>
+        <li>Language support</li>
+        <li>The role of the user</li>
+        <li>Work that can be automated through system design</li>
+      </ul>
+    </p>
+    <h3>User Analysis</h3>
+    <p>The user and task analysis strives to improve human productivity, enhance product loyalty, reduce errors, shorten learning requirements, reduce mental workload and enhance the quality of the user/customer experience. When this analysis is properly executed, overall system complexity is generally reduced.</p>
+    <p>User abilities will be limited esp ability of elderly. So it is necessary to design by critical thinking considering all possibilities in detail. For elder care support system, the major stakeholders/user profiles would be :
+      <ol class="nestedList1">
+        <li>Elderly</li>
+        <li>Agency</li>
+        <li>Elderly Facing Healthcare Person / Home health aide / care coordinator</li>
+        <li>3rd-Party service provider <abbr title="Point Of Contact">POC</abbr></li>
+        <li>Family <abbr title="Point Of Contact">POC</abbr></li>
+      </ol>
+    </p>
+    <h4><u>Application Requirements</u></h4>
+    <p>The application requirements from various stakeholder perspective is brainstormed. This is an iterative process done by brainstorming the various stakeholders, market research and user research. Below are the application requirements from the 2 major stakeholders - the agency and the family member :</p>
+    <button class="accordion">Client Requirements based on Agency/Business Perspective</button>
+    <div class="panel">
+      <ul class="nestedList1">
+        <li>Profit for the business</li>
+        <ul class="nestedList2">
+          <li>Attract new customers and retain existing customers</li>
+          <li>Receive payments from all the clients (monthly or yearly including registration and one time payments)</li>
+          <li>Maintain and make decisions on Payrolls</li>
+          <ul class="nestedList3">
+            <li>Medical care</li>
+            <li>Pharmacists</li>
+            <li>Psychologists</li>
+            <li>Home maintenance care</li>
+            <li>Home aids</li>
+            <li>Drivers/transporters</li>
+            <li>Techie and maintenance costs of software</li>
+          </ul>
+          <li>Manage accounting</li>
+          <li>Financial costs of home</li>
+          <li>Marketing and advertising</li>
+        </ul>
+        <li>Maintain operational efficiency, effectiveness and minimize liability </li>
+        <ul class="nestedList2">
+          <li>Ensure reliable employees (check for proper immigration documents and status)</li>
+          <li>Ensure proper employee recruitment criteria </li>
+          <li>Avoid any law suits</li>
+          <li>Recording employee and client ratings to improve process and help retain both groups</li>
+          <li>Decision on new employee training on various clients and also business trainings</li>
+          <li>Track workforce for no discrepancies  </li>
+          <li>Ensure clients are understanding what they get and what to expect</li>
+          <li>Overall process monitoring </li>
+          <li>Employee and client on-boarding</li>
+          <li>Matching employees with the patients</li>
+          <li>Planning for ad-hoc emergency situations and incident management</li>
+          <li>Scheduling service </li>
+          <ul class="nestedList3">
+            <li>to manage employees/professionals</li>
+            <li>everyday chores/activities for the elderly</li>
+          </ul class="nestedList3">
+          <li>Partner with agencies</li>
+          <ul class="nestedList3">
+            <li>House hold item delivery including groceries</li>
+            <li>Hospital services</li>
+            <li>Funeral services</li>
+            <li>Overall house cleaning and maintenance</li>
+            <li>Services/Teams for extras viz., grooming them, shopping for them etc..</li>
+          </ul>
+          <li>Central location for:</li>
+          <ul class="nestedList3">
+            <li>Transportation</li>
+            <li>Pharmacy/medications</li>
+            <li>Meal support</li>
+          </ul>
+          <li>Relationship management</li>
+          <ul class="nestedList3">
+            <li>Communication with the family, partner agencies, employees, service providers (caregivers, doctors…) and the elderly</li>
+          </ul>
+        </ul>
+        <li>Reducing cost </li>
+        <ul class="nestedList2">
+          <li>Minimizes interference/support calls to the business</li>
+        </ul>
+        <li>Streamline transportation and communication between various people involved – minimize conflicts and slippages</li>
+        <li>Operationally organized for multiple clients</li>
+        <li>Recognizing and managing continually changing requirements</li>
+        <li>Integration/Compatible with client insurance and medical providers</li>
+        <li>Differentiate and be the best as compared to competitors</li>
+        <ul class="nestedList2">
+          <li>Simple and intuitive design </li>
+          <li>Great satisfied service generating excellent word of mouth publicity</li>
+        </ul>
+        <li>Customer safety, satisfaction and engagement (People don’t want to feel old)</li>
+        <ul class="nestedList2">
+          <li>Strengthen relationships between clients and personal relationships.</li>
+          <li>Minimize disruptions by arranging alternatives and backups</li>
+          <li>Keep customers alive for long by proper care and improving their quality of life</li>
+          <li>Preserve the elderly's dignity and independence by involving them in whatever activity they like</li>
+          <li>Personalized, convenient and flexible care for different client needs</li>
+        </ul>
+        <li>Streamline supplies per care type and per clients:</li>
+        <ul class="nestedList2">
+          <li>Healthcare items/supplies.</li>
+          <li>Personal care items.</li>
+          <li>Home care items (e.g., dishes, household maintenance, etc.)</li>
+        </ul>
+      </ul>
+    </div>
+    <button class="accordion">Client Requirements based on Family Member Perspective  </button>
+    <div class="panel">
+      <p>They are concerned only on managing the care for a single person</p>
+      <ul class="nestedList1">
+        <li>Best, reliable, affordable care from a reputed agency out in the market</li>
+        <li>Approachable, prompt and reliable service</li>
+        <ul class="nestedList2">
+          <li>clear communication of cancellation policies with the client</li>
+          <li>Accessible data on the employee profiles</li>
+          <li>Schedule if needed, to meet the team for personal updates/build care plan/build personal relationship with the team/building knowledge of the elderly general characteristics.</li>
+          <li>Single Point of contact/primary liaison available 24/7 on call to check on the status if required even via messaging system that supports photo sharing on daily basis of the elderly</li>
+        </ul>
+        <li>Staying organized and as stress-free as possible.</li>
+        <li>Best quality of care/service to ensure family member is happy/comfortable.</li>
+        <ul class="nestedList2">
+          <li>Accurate, prompt and frequent update on the elderly. Daily report sharing. Communication of daily status updates. </li>
+          <li>Communication to additional family members in case of emergency</li>
+          <li>Communication with the caretakers and access to their profiles if needed</li>
+          <li>Ensuring proper daily chores of the elderly including hygiene</li>
+          <li>Organizing recreational activities (Dress them up if that makes them happy, take care of pets if any)</li>
+        </ul>
+        <li>Trust and safety</li>
+        <ul class="nestedList2">
+          <li>Trust that the senior isn’t being taken advantage of. </li>
+        </ul>
+        <li>Managing finances and bill-pay (for the elderly person).</li>
+        <li>Financial security/management including insurance. </li>
+        <li>Transparency in communication with family/other loved ones.</li>
+        <ul class="nestedList2">
+          <li>Maintaining mental strength with a support group.</li>
+          <li>Sharing responsibilities as needed </li>
+        </ul>
+        <li>Not tied to a specific location.</li>
+        <ul class="nestedList2">
+          <li>Family members can still check in/participate in care from anywhere.</li>
+          <li>Opens up the family network, as you don’t need to be in close proximity</li>
+        </ul>
+      </ul>
+    </div>
+    <h4><u>Defining User Profiles </u></h4>
+    <p>The major user profiles are then defined out of the various stakeholders based on their priorities in using the application.</p>
+    <button class="accordion">Family POC</button>
+    <div class="panel">
+      <ul class="nestedList1">
+        <li>Primary caregivers -- highly involved in using the service, involved family members</li>
+        <li>Secondary family members -- less involved, fewer updates</li>
+        <li>Children -- grandchildren, nieces, nephews</li>
+        <li>Friends</li>
+      </ul>
+    </div>
+    <button class="accordion">Elderly Facing Healthcare Person</button>
+    <div class="panel">
+      <ul class="nestedList1">
+        <li>Caregiver</li>
+        <li>Primary care physicians</li>
+        <li>Physical therapists</li>
+        <li>Pharmacists</li>
+        <li>Mental health: psychologist, psychiatrist</li>
+        <li>Home health aids</li>
+        <ul class="nestedList2">
+          <li>Socialization and companionship</li>
+          <li>Grocery shopping / household maintenance</li>
+        </ul>
+      </ul>
+    </div>
+    <button class="accordion">Agency</button>
+    <div class="panel">
+      <ul class="nestedList1">
+        <li>Customer facing contact <abbr title="Point Of Contact">POC</abbr></li>
+        <li>Business owner</li>
+        <li>Financial manager (customer-facing)</li>
+        <ul class="nestedList2">
+          <li>Insurance coordinator</li>
+        </ul>
+        <li>Billing staff (internal business side)</li>
+        <li>Marketing staff</li>
+        <li>Accounting staff</li>
+        <li>Transportation</li>
+        <ul class="nestedList2">
+          <li>Drivers</li>
+          <li>Coordinators</li>
+        </ul>
+        <li>Custodial staff / facilities</li>
+        <li>Regulators/home inspectors</li>
+        <li>Marketing / sales staff</li>
+        <li>Onsite manager / director</li>
+        <li>Techie team</li>
+        <li>Translator / linguistic services (bilingual staff)</li>
+      </ul>
+    </div>
+    <!-- <h4>3rd-Party service POC</h4> -->
+    <button class="accordion">3rd-Party service POC</button>
+    <div class="panel">
+      <ul class="nestedList1">
+        <li>Government agents </li>
+        <li>Social security agents</li>
+        <li>Religious services</li>
+        <li>Funeral home coordinators </li>
+        <li>Hospice care</li>
+        <li>Social workers</li>
+      </ul>
+    </div>
+  </ul>
+  <h4><u>Defining User Characteristics </u></h4>
+  <p>The characteristics of each user profiles are then thought upon and documented.</p>
+  <div class="imageSlider">
+    <button class="sliderButton" onclick="plusDivs(-1)">&#10094;</button>
+    <img class="mySlides openOnClick" src="resources/elderCare/Persona1.jpg" alt="persona 1">
+    <img class="mySlides openOnClick" src="resources/elderCare/Persona2.png" alt="persona 2">
+    <img class="mySlides openOnClick" src="resources/elderCare/Persona3.png" alt="persona 3">
+    <img class="mySlides openOnClick" src="resources/elderCare/Persona4.png" alt="persona 4">
+    <button class="sliderButton" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <h4><u>Defining the User Goals</u></h4>
+  <p>Goals are those which the various profiles tries to achieve. It determines the users desired outcome that connects to the vaue proportion. The high level goals are then listed after which it is retrospected on how the stakeholders feel on those.</p>
+  <button class="accordion">High Level goals of Persona1 : Elderly</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Be happy, maintain good health</li>
+      <li>Reduce stress and conflicts</li>
+    </ul>
+  </div>
+  <button class="accordion">High Level goals of Persona2 : Agency Owner</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Maximize profit</li>
+      <li>Retain clients and employees</li>
+      <li>Ensure client satisfaction thus improving their business</li>
+      <li>Provide best and easy updates to the client, integrate and co-ordinate with all the 3rd party services, comply with all the regulations  </li>
+      <li>Avoid possible legal issues/ conflicts/ miscommunications/ license issues</li>
+    </ul>
+  </div>
+  <button class="accordion">High Level goals of Persona3 : Care Cordinator</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Get paid constantly </li>
+      <li>Gain experience and step ahead on their career</li>
+      <li>Provide best experience to the client, thus improving agency profile, thus making their position in the agency safe for longer period if needed</li>
+      <li>Be happy and satisfied for being help to the elderly	</li>
+    </ul>
+  </div>
+  <button class="accordion">High Level goals of Persona4 : Family POC</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Keep their parents/elderly happy at their house and not have the guilt of sending them to a home</li>
+      <li>Quality and peaceful life</li>
+      <li>Affordable, reliable, prompt, effective and efficient care</li>
+      <li>Variety of service offerings to minimize frequent intervention and self responsibility </li>
+      <li>Quick and easy access to elderly's health and day-to-day updates</li>
+    </ul>
+  </div>
+  <h4><u>Define Process Level Categories</u></h4>
+  <p>The required data are gathered based on various methods : Ethnographic studies, Cognitive interviews, Surveys, Focus groups, Journal studies or Experience sampling of the prospective stakeholders. The process level categories are then listed upon without getting into the depth of each.</p>
+  <button class="accordion">Process Level goals of Persona1 : Elderly</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Proper system to handle daily medication, monthly check-ups and consultation</li>
+    </ul>
+  </div>
+  <button class="accordion">Process Level goals of Persona2 : Agency Owner</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Number of clients and years of establishment details to showcase the agency’s credibility</li>
+      <li>Log and track payments and leaves of employees</li>
+      <li>Log employee records, activity tracker</li>
+      <li>Maintain client records, frequent updates, profile history, license records and their expiry alerts</li>
+      <li>Alert to clients on payment due dates, other one time payments</li>
+      <li>Employee training documents and attendance sheet</li>
+      <li>Maintain medication history </li>
+    </ul>
+  </div>
+  <button class="accordion">Process Level goals of Persona3 : Care Coordinator</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Log into daily activity tracker (medication, mood, sleep, food)</li>
+      <li>Provision to review elderly records (mainly medical) </li>
+      <li>Log complaints/comments if any</li>
+      <li>Access to training documents</li>
+      <li>View payroll account statements</li>
+    </ul>
+  </div>
+  <button class="accordion">Process Level goals of Persona4 : Family POC</button>
+  <div class="panel">
+    <ul class="nestedList1">
+      <li>Rating employees by the elderly if they can, to track their happiness and satisfaction with various care coordinators</li>
+      <li>Track daily reports, activity tracker (food, sleep, mood, medications)</li>
+      <li>Track and record medical consultations and comments</li>
+      <li>Alert for payments to avoid slippages</li>
+      <li>Access care coordinator and doctor profile for confidence and trust on them and provision to rate and comment on their service</li>
+      <li>Log complaints and ratings  </li>
+      <li>View and enroll various service options provided</li>
+      <li>View and register service options covered under health plan</li>
+    </ul>
+  </div>
+  <h4><u>Consolidated Macro level process goals/tasks</u></h4>
+  <p>The above listed macro level process goals across all the profiles are then clubbed based on their shared goals and then they are sorted based on their priorities</p>
+  <ol class="nestedList2" style="line-height:2em;line-height:2rem;">
+    <li>Number of clients and years of establishment details to showcase the agency’s credibility</li>
+    <li>Maintain client profile (medical records, mandatory things to know)</li>
+    <li>Maintain employee profile (payments, leaves, work experience, certifications, activity tracker) </li>
+    <li>Maintain daily elderly activity log (food, sleep, mood, medications)</li>
+    <li>Monthly check-ups and consultation Log (dates, consultant details and their comments)</li>
+    <li>Rating employees by the elderly if they can, to track their happiness and satisfaction with various care coordinators</li>
+    <li>View and enroll various service options available</li>
+    <li>View and register service options covered under health plan</li>
+    <li>Access care coordinator and doctor profile for confidence and trust on them and provision to rate and comment on their service</li>
+    <li>Alert to clients on payment due dates, other one time payments</li>
+    <li>Employee login with provisions to view and update profile, view training docs, payrolls, leaves, attendance levels, log complaints and ratings  </li>
+    <li>Admin login to maintain license records and their expiry alerts, view client and employee pages as well </li>
+  </ol>
+  <h4><u>Task Value Matrix</u></h4>
+  <p>The task-value matrix is plotted to identify and negotiate conflicts across profiles, inform trade-offs, and to separate universal requirements from profile-specific requirements. It is also aimed to satisfy the requirements of the most “needy users” while supporting the needs of the more capable, motivated users by connecting the value of task attached to each profile and their expertise.</p>
+  <img class="statImages openOnClick" src="resources/elderCare/taskValueMatrix.png" alt="task value matrix">
+  <h4><u>Micro-level Task Analysis</u></h4>
+  <p></p>
+  <p>The micro level tasks for each of the macro level tasks are broken into progressively smaller units as listed below. It provides clear concise and measurable rationale outcomes.</p>
+  <button class="accordion"><b>Macro level task 1:</b> Log into daily activity tracker (medication, mood, sleep, food)</button>
+  <div class="panel">
+    <ol class="nestedList1">
+      <li>Log into the care coordinator profile </li>
+      <li>Choose the client profile they are working for</li>
+      <li>Choose the daily activity logger option</li>
+      <li>Create a new one for that particular day if it is the first time they logs for the day
+        Else choose and already created log for that day</li>
+        <li>Log the details about the elderly activity information at hand </li>
+        <li>Save it</li>
+        <li>Exit the application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 2:</b> Managing/rescheduling elderly activities and appointments</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose the client profile they are working for</li>
+        <li>Check for any appointments for that particular day</li>
+        <li>View/ edit / add / delete appointment type, time, date </li>
+        <li>Save changes </li>
+        <li>Review changes</li>
+        <li>Exit application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 3:</b> Co-ordinate with various 3rd party services if needed</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose the client profile they are working for</li>
+        <li>Check for any 3rd party services availed</li>
+        <li>View/ edit service date/time/type</li>
+        <li>Exit Application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 4:</b> Manage payments for 3rd party services and employees working under</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose the client profile they are working for</li>
+        <li>Check for any 3rd party services availed</li>
+        <li>Check if payments are made for the availed service</li>
+        <li>If not add it to the current invoice to the client</li>
+        <li>Alert the client regarding the availed 3rd party service and the charges added for the same</li>
+        <li>Exit Application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 5:</b> Maintaining and updating client requirements (services availed, preferred hospital)</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose the client profile they are working for</li>
+        <li>Add services availed</li>
+        <li>Edit/update/add information on emergency preferences </li>
+        <li>Save changes </li>
+        <li>Exit Application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 6:</b> Communicate with the family POC </button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose the client profile they are working for</li>
+        <li>Check for client family POC details</li>
+        <li>Send a personalized message to the POC in case of low emergency</li>
+        <li>Check for any personal phone number to contact in person in case of high emergency</li>
+        <li>Exit Application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 7:</b> Provision to review elderly records (mainly medical) </button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose the client profile they are working for</li>
+        <li>Choose ‘medical record review’ option </li>
+        <li>Check for the overall summary and health history, medication details, daily activity history</li>
+        <li>Exit the application </li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 8:</b> View payroll account statements</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Choose personal profile information</li>
+        <li>Check for information regarding personal payroll and pay slips</li>
+        <li>View payments made to employees working under</li>
+        <li>Download/ view payment records if needed</li>
+        <li>Exit application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 9:</b> Access to training documents</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Check for self-improvement and training documents</li>
+        <li>View all the available training records</li>
+        <li>Read/Provide comments</li>
+        <li>Exit Application</li>
+      </ol>
+    </div>
+    <button class="accordion"><b>Macro level task 10:</b> Log complaints/comments if any</button>
+    <div class="panel">
+      <ol class="nestedList1">
+        <li>Log into the care coordinator profile </li>
+        <li>Search for employee well being options</li>
+        <li>Report/log comments or complaints</li>
+        <li>Post/submit the message</li>
+        <li>Exit application</li>
+      </ol>
+    </div>
+    <h4><u>Requirements Table</u></h4>
+    <p>The above task analysis is a user centric approach designed across the user profile – care coordinator helps to align the business goals, user goals, task requirements and its value proposition in a more understandable way ensuring that the application covers all the required functionalities and makes it usable for the users.</p>
+    <iframe width="100%" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=408600C3A3543E0E%211744&authkey=%21AApwYTr3NXocohY&em=2&wdAllowInteractivity=False&ActiveCell='Requirements%20Table'!A1&wdInConfigurator=True"></iframe>
+    <h4><u>Data to Design</u></h4>
+    <p>Based on the requirements table, the features are prioritized and the information architecture is sketched. Then multiple paper prototypes are designed out of which the most apt design is chosen which is then converted into low fidelity protoypes. User testing could be performed on this low fidelity prototype to confirm the design.</p>
+    <p>Once the low fidelity protoypes are tested and iterated for modifications, if needed, based on the test result, the final design is confirmed, after which the high fidelity prototypes are designed which are then handed over to the developement team for its build.</p>
+  </section>
+</main>
+<footer>
+  <div class="bottom-bar">
+    <span style="float: left;">&copy 2019 | All right reserved.</span>
+    <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
+  </div>
+  <div class="bottom-bar-mobile" style="text-align:center;">
+    <p>&copy 2019 | All right reserved.</p>
+    <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+  </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/commonScript.js"></script>
+<script src="js/accordionScript.js"></script>
+<script type="text/javascript">
+
+/*Image slideshow START - 1st slider*/
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+/*Image slideshow END - 1st slider*/
+</script>
+</body>
+</html>

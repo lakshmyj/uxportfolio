@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshmy Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/homeStyle.css">
+  <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+  <aside>
+    <div class="imageLogo">
+      <img src="resources/home/Lak_linkedin_med.jpg" alt="Lakshmy Jayalakshmy">
+    </div>
+    <nav id="mainNav">
+      <a href="#home" class=selectedNav onclick="setSelectedTab('home')"><i class="material-icons md-36">home</i><p>Home</p></a>
+      <a href="#projects_division" onclick="setSelectedTab('projects')"><i class="material-icons md-36">image</i><p>Projects</p></a>
+      <a href="#about_division" onclick="setSelectedTab('about')"><i class="material-icons md-36">person</i><p>About</p></a>
+      <a href="#contact_division" onclick="setSelectedTab('contact')"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+    </nav>
+    <p id="navDescription"><i><b>WELCOME!</b><br>Thank you for visiting my site...<br>Scroll down or use the navigation to browse through my portfolio and learn more about me... </i></p>
+  </aside>
+
+  <button class="sticky" id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+  <div id="modalMenuDiv" class="modalMenuBG">
+    <nav id="mobNav">
+      <a href="#home" onclick="hideMenu()">Home</a>
+      <a href="#projects_division" onclick="hideMenu()">Projects</a>
+      <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
+      <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
+      <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
+      <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
+      <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
+      <a href="#about_division" onclick="hideMenu()">About</a>
+      <a href="#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
+      <a href="#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
+      <a href="#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
+      <a href="#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+      <a href="#contact_division" onclick="hideMenu()">Contact</a>
+    </nav>
+  </div>
+
+  <header id="home">
+    <img src="resources/home/homeHero.jpg" alt="Idea bulbs">
+    <div class="homeContainer">
+      <p class="myName sticky">Lakshmy Jayalakshmy</p>
+      <div class="socialNWIcons">
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="fa fa-linkedin-square" style="font-size:36px;color:#190654;padding:1em;padding:1rem;"></i>
+        </a>
+        &nbsp &nbsp &nbsp &nbsp
+        <a href="https://codepen.io/lakshmyj/" target="_blank">
+          <i class="fa fa-codepen" style="font-size:36px;color:#190654;"></i>
+        </a>
+      </div>
+      <div class="bestAt">
+        <h3 id="bestAtWeb"><i>UX Designer || UI Developer || Artist</i></h3>
+        <div id="bestAtMobile">
+          <h3><i>UX Designer ||<br> UI Developer ||<br> Artist</i></h3>
+        </div>
+        <!-- <p> I find on-time practical solutions for complex problems with in-depth understanding by conducting research, discussing and applying critical thinking techniques that help me discover alternate information and visual design possibilities and probabilities in an organized manner.</p></div> -->
+        <!-- <p>I identify on-time practical solutions for complex UX problems with in-depth understanding. I do this by applying critical thinking on research and discussions, which helps me discover new solutions and design possibilities in an organized manner. </p> -->
+        <p style="text-align:justify;">I thrive on identifying and implementing practical solutions for complex time-bound problems in the UI/UX space by employing techniques ranging from research to wireframing, rapid prototyping and testing.</p>
+        <span id="textToClick" style ="margin-left:0;" onclick="openRefLetterModal('home/resume.jpg')">
+          <button class="viewResumeButton" onclick="ga('send', 'event', { eventCategory: 'ResumeView', eventAction: 'ResumeButtonClick',eventValue: 1});">View Resume</button>
+          <!-- <input type="button" class="viewResumeButton" value="View Resume" onclick="ga('send', 'event', { eventCategory: 'ResumeView', eventAction: 'ResumeButtonClick',eventValue: 1});" /> -->
+        </span>
+        <img class="displayImg" src="resources/home/resume.jpg" alt="resume">
+      </div>
+      <div class="caretDown">
+        <a href="#projects_division" onclick="setSelectedTab('projects')"><img src="resources/home/caretDown.png" alt="caret down button"></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- The Modal -->
+  <div id="modalBox" class="modal">
+    <div>
+      <input type="button" class="close zoomButton" value="&times">
+    </div>
+    <div id="modalImageContainer">
+      <img id="modalImage" class="modal-content">
+    </div>
+    <div style="text-align:center;">
+      <input type="button" id="zoomin" class="zoomButton" value="+"/>
+      <input type="button" id="zoomout" class="zoomButton" value="-"/>
+    </div>
+  </div>
+
+  <div class="projects_division" id="projects_division">
+    <h2>Projects</h2>
+    <section class="pjtContainer">
+      <div class="projectTile">
+        <img src="resources/home/pizzeria.png" alt="pizzeria logo">
+      </div>
+      <div class="projectTile pjtdesc">
+        <h3>Pizzeria UX design</h3>
+        <p>A full fledged UX project on re-designing a pizzeria website to make it usable so as to enable easier and faster order placement</p>
+        <a href="pizzeriaProject.html">
+          <button class="caseStudyButton">View More</button>
+        </a>
+      </div>
+    </section>
+    <section class="pjtContainer">
+      <div class="projectTile">
+        <img src="resources/home/amazon_logo.jpg" alt="amazon logo">
+      </div>
+      <div class="projectTile pjtdesc">
+        <h3>UX CaseStudy on Amazon.com</h3>
+        <p>Analyzing amazon.com for its compatibility with human factors considerations and user engagement measurement techniques</p>
+        <a href="amazonProject.html">
+          <button class="caseStudyButton">View More</button>
+        </a>
+      </div>
+    </section>
+    <section class="pjtContainer">
+      <div class="projectTile">
+        <img src="resources/home/bentleyUniversity.jpg" alt="bentley university">
+      </div>
+      <div class="projectTile pjtdesc">
+        <h3>Usability Testing on Bentley.edu</h3>
+        <p>Identifying user research proposal and conducting a usability test on the Bentley university's official website</p>
+        <a href="utProject.html">
+          <button class="caseStudyButton">View More</button>
+        </a>
+      </div>
+    </section>
+    <section class="pjtContainer">
+      <div class="projectTile">
+        <img src="resources/home/ElderCareLogo.jpg" alt="elder care support logo">
+      </div>
+      <div class="projectTile pjtdesc">
+        <h3>UX in Elder Care Support System</h3>
+        <p>Performing user and task analysis including persona definition and feature prioritisation for an elder care support system</p>
+        <a href="elderCareProject.html">
+          <button class="caseStudyButton">View More</button>
+        </a>
+      </div>
+    </section>
+    <section class="pjtContainer">
+      <div class="projectTile">
+        <img src="resources/home/BankLogo.jpg" alt="BOA Wells Fargo Logo">
+      </div>
+      <div class="projectTile pjtdesc">
+        <h3>UX Measurement in Online Banking</h3>
+        <p>Quantitative analysis of twinned usability test result data sets of Bank of America and WellsFargo to measure the user experience</p>
+        <a href="dataAnalysisProject.html">
+          <button class="caseStudyButton">View More</button>
+        </a>
+      </div>
+    </section>
+  </div>
+  <section class="about_division" id="about_division">
+    <h2>About</h2>
+    <div id="credoSubDiv">
+      <h3>Credo</h3>
+        <p style="text-align:justify;">I am a passionate designer, developer and that's what I do the best.<br><br>
+          Demystifying problems with critical thinking and focused interaction that leads to impactful solutions excites me the most.
+          I take an analytical approach in simplifying the way people work together and interact with products and technologies to
+          build meaningful relationships. I believe this to be the pinnacle to organizational and individual development.<br><br>
+          I believe a solution exists for any problem, be it a design change in the
+          <span><abbr title="Human Computer Interaction (HCI) is the design and use of computer technology, focused on the interfaces between people/users and computers.">HCI</abbr></span>
+          world or one that needs a change of mindset in the
+          <span><abbr title="Human Human Interaction (HHI) Coined by myself :D">HHI</abbr></span>
+          world...<br>
+          <br>During my freetime, I do a variety of things. I like to innovate new chrochet patterns, listen to indian music, cook food, watch movies and re-think them in different possible ways. Travel and photography interests me as well. I like to keep fit and exercise daily.</p>
+        </div>
+        <div id="skillsSubDiv">
+          <h3>Skillsets</h3>
+          <div class="skillRows">
+            <div class="skillCols">
+              <p class="skillCategory"><i class="fa fa-pencil"></i>&nbsp <u>UX Design</u></p>
+              <ul>
+                <div class="openUp">
+                <li class="openUp-item">
+                  User Research
+                  <div class="openUp-item-content"><p>Performed user research for pizzeria re-design project</p></div>
+                </li>
+                <li class="openUp-item">
+                  Persona Creation
+                  <div class="openUp-item-content">
+                    <p>Defined personas for pizzeria re-design and elder care support system projects</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Wireframing
+                  <div class="openUp-item-content">
+                    <p>Created Wireframes for pizzeria re-design and my portfolio projects for website and mobile</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Low Fidelity Prototyping
+                  <div class="openUp-item-content">
+                    <p>Created low fidelity paper and digital protoypes for pizzeria re-design and my portfolio projects for website and mobile</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  High Fidelity Prototyping
+                  <div class="openUp-item-content">
+                    <p>Created high fidelity protoypes for pizzeria re-design and my portfolio projects for website and mobile</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Usability Testing
+                  <div class="openUp-item-content">
+                    <p>Conducted a full-fledged usability testing on Bentley university's official website</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Responsive Design
+                  <div class="openUp-item-content">
+                    <p>Created responsive designs for pizzeria re-design and for my digital portfolio</p>
+                  </div>
+                </li>
+                <h4>Software Tools</h4>
+                <li class="openUp-item">
+                  Photoshop
+                  <div class="openUp-item-content">
+                    <p>All the images used in this website and projects are editted in photoshop</p>
+                  </div>
+                </li>
+                <li>Illustrator</li>
+                <li class="openUp-item">
+                  Balsamiq
+                  <div class="openUp-item-content">
+                    <p>I have created the low fidelity wireframes for the pizzeria re-design project using Balsamiq</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Adobe XD
+                  <div class="openUp-item-content">
+                    <p>I have created the high fidelity prototypes for the pizzeria re-design project using Balsamiq</p>
+                  </div>
+                </li>
+                <li>Sketch</li>
+              </div>
+              </ul>
+            </div>
+            <div class="skillCols">
+              <p class="skillCategory">
+                <i class="fa fa-code" style="font-size:18px;"></i>
+                &nbsp <u>Development</u>
+              </p>
+              <h4>Front-end Development</h4>
+              <ul>
+                <div class="openUp">
+                <li class="openUp-item">
+                  HTML
+                  <div class="openUp-item-content">
+                    <p>This responsive portfolio website is developed by myself in HTML</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  CSS
+                  <div class="openUp-item-content">
+                    <p>This responsive portfolio website is developed by myself using CSS</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  JavaScript
+                  <div class="openUp-item-content">
+                    <p>This responsive portfolio website is developed by myself using JavaScript</p>
+                  </div>
+                </li>
+                <h4>Back-end  Development</h4>
+                <li class="openUp-item">
+                  Core Java
+                  <div class="openUp-item-content">
+                    <p>I have a 5+ years of industry experience working in Core Java Projects</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  MySQL
+                  <div class="openUp-item-content">
+                    <p>I have worked on databases with MySQL</p>
+                  </div>
+                </li>
+                <h4>Development Environments</h4>
+                <li>Dreamweaver</li>
+                <li class="openUp-item">
+                  atom.io
+                  <div class="openUp-item-content">
+                    <p>This responsive portfolio website is developed in atom.io</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Eclipse
+                  <div class="openUp-item-content">
+                    <p>I have 2 years of industry experience working in projects built in eclipse</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  IntelliJ
+                  <div class="openUp-item-content">
+                    <p>I have 4 years of industry experience working in projects built in IntelliJ</p>
+                  </div>
+                </li>
+              </div>
+              </ul>
+            </div>
+            <div class="skillCols">
+              <p class="skillCategory">
+                <i class="fa fa-wrench" style="font-size:18px;"></i>
+                &nbsp <u>Other Capabilities</u>
+              </p>
+              <ul>
+                <h4>Development</h4>
+                <div class="openUp">
+                <li>Wordpress</li>
+                <li class="openUp-item">
+                  CVS versioning system
+                  <div class="openUp-item-content">
+                    <p>I have 4 years of industry experience working in projects version controlled using CVS</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Github version control
+                  <div class="openUp-item-content">
+                    <p>This responsive portfolio website is version controlled in Git</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  HP Quality Center
+                  <div class="openUp-item-content">
+                    <p>I have 2 years of industry experience working in projects quality controlled and documented in HPQC</p>
+                  </div>
+                </li>
+                <h4>Operating System</h4>
+                <li class="openUp-item">
+                  Windows
+                  <div class="openUp-item-content">
+                    <p>I have worked in windows for 20 years</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  macOS
+                  <div class="openUp-item-content">
+                    <p>I am comfortable in working on mac</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Linux
+                  <div class="openUp-item-content">
+                    <p>I have 4 years of industry experience working in projects hosted in linux servers</p>
+                  </div>
+                </li>
+                <li class="openUp-item">
+                  Unix
+                  <div class="openUp-item-content">
+                    <p>I have industry experience working in unix systems</p>
+                  </div>
+                </li>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="academicSubDiv">
+          <h3>Qualifications</h3>
+          <div class="academics">
+            <h4>Academics</h4>
+            <ul>
+              <li class="accordion qualificationAccordion" >User Experience Certificate Program, <b>Bentley University</b>, Waltham, Boston, USA (Ongoing)</li>
+              <div class="panel qualificationPanel">
+                <p>I have currently completed the following courses:</p>
+                <ul class="nestedList1">
+                  <li>Information Archtecture</li>
+                  <li>Usability Testing</li>
+                  <li>Human Factors and User Experience</li>
+                  <li>User and Task Analysis</li>
+                  <li>Measuring User Engagement</li>
+                  <li>Measuring User Experience</li>
+                </ul>
+              </div>
+              <li id="clickToDisplay" onclick="openRefLetterModal('home/AGICertificate.jpg');">
+                UX Certificate Program, <b>American Graphic Institute</b>, Woburn, Boston, USA, April 2019
+              <img class="displayImg" src="resources/home/AGICertificate.jpg" alt="american graphics institute UX certificate">
+            </li>
+              <li id="clickToDisplay" onclick="openRefLetterModal('home/degreeCertificate.jpg');">
+                Bachelor of Technology, <b>Computer Science and Engineering</b>, Kerala University, Trivandrum, India, 2011
+              <img class="displayImg" src="resources/home/degreeCertificate.jpg" alt="engineering degree certificate">
+            </li>
+            </ul>
+            <h4>Certifications</h4>
+            <ul>
+              <li>'CSS Essentials' from LinkedIn Learning (Ongoing)</li>
+              <li>'JavaScript Essentials' from LinkedIn Learning (Ongoing)</li>
+              <li>'Front-End Web Development With HTML5, CSS, and JavaScript' from PluralSight (Ongoing)</li>
+              <li>‘Intro to the Design of Everyday Things’ from Udacity, December 2018 </li>
+              <li id="clickToDisplay" onclick="openRefLetterModal('home/teamWCertificate.jpg');">
+                ‘User Experience Fundamentals’ from The Team W, August 2018
+              <img class="displayImg" src="resources/home/teamWCertificate.jpg" alt="team W UX certificate">
+            </li>
+              <li id="clickToDisplay" onclick="openRefLetterModal('home/open2studyCertificate.jpg');">
+                ‘User Experience for the Web’ from Open2Study, August 2018
+              <img class="displayImg" src="resources/home/open2studyCertificate.jpg" alt="open2study UX certificate">
+            </li>
+              <li>Retail Level 1 certification provided by GAMAcademy, USTGlobal, Trivandrum, India, 2014</li>
+              <li id="clickToDisplay" onclick="openRefLetterModal('home/alphaCertification.jpg');">
+                ALPHA certification on Java provided by GAMAcademy, USTGlobal, Trivandrum, India, 2012
+              <img class="displayImg" src="resources/home/alphaCertification.jpg" alt="alpha leadership certificate">
+            </li>
+            </ul>
+            <h4>Competencies</h4>
+            <ul>
+              <li>Functional knowledge in user experience requirements gathering, information architecture, usability testing, rapid application design and development, testing, deployment and quality control</li>
+              <li>Hands-on experience in front end responsive development and agile software life cycle processes</li>
+              <li>Excellent written and oral communication, people management, project management and team playing skills</li>
+              <li>Mentoring team members on technical and domain know-how</li>
+            </ul>
+          </div>
+        </div>
+        <div id="testiSubDiv">
+          <h3>Testimonials</h3>
+          <section class="testiContainer">
+            <div class="testiTile">
+              <p>
+                <i>"Your design is well thought out, complete and well executed. You've done a great job - the survey is wonderful - understanding and anticipating the user's needs in this context"</i>
+                <br>
+                <span id="textToClick" onclick="openRefLetterModal('home/greggTestimonial.png'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+                  view citation
+                </span>
+                <img class="displayImg" src="resources/home/greggTestimonial.png" alt="reference letter">
+                <br>- Gregg Almquist
+                <br>&nbsp&nbsp&nbsp<i>Lecturer at Bentley University</i>
+                <br>&nbsp&nbsp&nbsp<i>Princpial of eXperient Interactive Boston</i>
+              </p>
+            </div>
+            <div class="testiTile">
+              <p>
+                <i>"She has the capability to complete assigned tasks with minimum guidance that makes her intellectually independent. This student is highly disciplined, sincere and has pleasing manners. "</i>
+                <br>
+                <span id="textToClick" onclick="openRefLetterModal('home/ShahilaRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+                  view reference letter
+                </span>
+                <img class="displayImg" src="resources/home/ShahilaRecommendationLetter.jpg" alt="reference letter">
+                <br>- Shahila Hameed
+                <br>&nbsp&nbsp&nbsp<i>Lecturer, Dept of Computer Science and IT</i>
+                <br>&nbsp&nbsp&nbsp<i>MACE, Kerala University</i>
+              </p>
+            </div>
+          </section>
+          <section class="testiContainer">
+            <div class="testiTile">
+              <p>
+                <i>"She has a good logical ability and tries to solve problems efficiently. I have found her ideas to be innovative and creative. She is inquisitive in learning more about anything and everything."</i>
+                <br>
+                <span id="textToClick" onclick="openRefLetterModal('home/LekshmiRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+                  view reference letter
+                </span>
+                <img class="displayImg" src="resources/home/LekshmiRecommendationLetter.jpg" alt="reference letter">
+                <br>- Lekshmi RJ
+                <br>&nbsp&nbsp&nbsp<i>Lecturer, Dept of Computer Science and IT</i>
+                <br>&nbsp&nbsp&nbsp<i>MACE, Kerala University</i>
+              </p>
+            </div>
+            <div class="testiTile">
+              <p>
+                <i>"Her sound knowledge of fundamentals, a truly remarkable ability to apply theory to practical situation and a high motivation to keep abreast with the latest information help her in the field she is pursuing. "</i>
+                <br>
+                <span id="textToClick" onclick="openRefLetterModal('home/AbishtaRecommendationLetter.jpg'); ga('send', 'event', { eventCategory: 'ReferenceLetter', eventAction: 'RefButtonClick', eventValue: 1});">
+                  view reference letter
+                </span>
+                <img class="displayImg" src="resources/home/AbishtaRecommendationLetter.jpg" alt="reference letter">
+                <br>- Abhishta KS
+                <br>&nbsp&nbsp&nbsp<i>Assistant Professor, Dept of Computer Science and IT</i>
+                <br>&nbsp&nbsp&nbsp<i>MACE, Kerala University</i>
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="contact_division" id="contact_division">
+        <h2>Contact</h2>
+      <section class="contactContainer">
+        <div class="contactTile">
+          <i class="fa fa-phone" style="font-size:36px;color:#190654;padding:1em;padding:1rem;"></i>
+          <p> Call / Text me at </p>
+          <p class="contactText">+1 - 857 - 930 - 0200</p>
+        </div>
+        <div class="contactTile">
+          <!-- <a href="mailto:lakshmyj@gmail.com" target="_blank"> -->
+            <i class="material-icons md-36" style="color:#190654;padding:1em;padding:1rem;">mail</i>
+          <!-- </a> -->
+          <p> Drop a mail at </p>
+          <p class="contactText">lakshmyj@gmail.com</p>
+        </div>
+        <div class="contactTile">
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa fa-linkedin-square" style="font-size:36px;color:#190654;padding:1em;padding:1rem;"></i>
+          </a>
+          <p> Connect with me on linkedIn </p>
+          <p class="contactText">Lakshmy Jayalakshmy</p>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="bottom-bar">
+        <span style="float: left;">&copy 2019 | All right reserved.</span>
+        <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
+      </div>
+      <div class="bottom-bar-mobile" style="text-align:center;">
+        <p>&copy 2019 | All right reserved.</p>
+        <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+      </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/commonScript.js"></script>
+    <script src="js/accordionScript.js"></script>
+    <script>
+    // function fixBG(){
+    //   header.style.position = "fixed";
+    //   header.style.overflow = "hidden";
+    //   body.style.position = "fixed";
+    //   body.style.overflow = "hidden";
+    // }
+    /*mobile Navigation START*/
+    // var modal = document.getElementById("modalMenuDiv");
+    // var btn = document.getElementById("hamburgerBtn");
+    // btn.onclick = function() {
+    //   modal.style.display = "block";
+    // }
+    // window.onclick = function(event) {
+    //   if (event.target == modal) {
+    //     modal.style.display = "none";
+    //   }
+    // }
+    /*mobile Navigation END*/
+
+    /*Scroll Indicator START*/
+    // window.onscroll = function changeNav(){
+    //   var mainNavBar = document.getElementById('mainNav'),
+    //   var projectSection = document.getElementById('projects_division'),
+    //   var projectSectionTop = projectSection.getBoundingClientRect().top,
+    //   var aboutSection = document.getElementById('about_division'),
+    //   var aboutSectionTop = aboutSection.getBoundingClientRect().top,
+    //   var contactSection = document.getElementById('contact_division'),
+    //   var contact_divisionTop = contactSection.getBoundingClientRect().top,
+    //   var navBarHeight = mainNavBar.getBoundingClientRect().height;
+    //
+    //   if(projectSectionTop <= navBarHeight) {
+    //     mainNavBar.className = ('basic-classname');
+    //   } else if(aboutSectionTop >= navBarHeight) {
+    //     mainNavBar.className =  ('basic-classname added-classname');
+    //   }
+    // }
+    /*Scroll Indicator END*/
+
+  </script>
+</body>
+</html>

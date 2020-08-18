@@ -1,0 +1,170 @@
+/*pizzeriaStyle.css*/
+h3{
+  padding: 1em 0;
+  padding: 1rem 0;
+}
+header img{
+  -webkit-filter: opacity(25%) blur(1px);
+  width:100%;
+}
+.processImage_responsive{
+  display: none;
+}
+.researchImgRows, .paperPrototypeRows{
+  display:flex;
+  flex-wrap: wrap;
+}
+.researchImgRows img, .paperPrototypeRows img{
+  object-fit:fill;
+  overflow:hidden;
+  height:90%;
+  /* width:100%; */
+  flex:1;
+  margin:.6em;
+  transition:1s;
+  cursor: pointer;
+}
+.researchImgRows img:hover,
+.pizzeriaPersona:hover,
+.IASection img:hover,
+.paperPrototypeRows img:hover{
+  transform: scale(1.03);
+}
+.pizzeriaPersona{
+  height:75%;
+  width:75%;
+  transition:1s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.IASection{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.IASection img{
+  flex:1;
+  object-fit:fill;
+  overflow: hidden;
+  padding: .5% 1%;
+  display: inline-block;
+  transition:1s;
+  cursor: pointer;
+  /* width:100%; */
+}
+.senarioSection{
+  margin: 0 2.5%;
+  line-height: 2em;
+}
+.wireframeImgRows{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wireframeImgRows img{
+  flex-wrap: wrap;
+  width:10%;
+  height:20%;
+  margin:.6em;
+  transition:1s;
+  cursor: pointer;
+}
+.responsiveScreens img{
+  width:7%;
+}
+#paperPrototypeVideo4Mob{
+  display: none;
+}
+.pizzeriaImageSlider{
+  display: none;
+}
+@media (max-width: 601px) {
+  main{
+    margin:0;
+    width:100%;
+    /* top:0;
+    left:0; */
+  }
+  #hamburgerBtn{
+    position:absolute;
+    padding: 0;
+    margin: .5em;
+    margin: .5rem;
+  }
+  header{
+    position:relative;
+    margin: 0;
+    width: 100%;
+    height:auto;
+  }
+  header > img{
+    width:100%;
+  }
+  header > h1{
+    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin: 0 0 0 3em;
+    margin: 0 0 0 3rem;
+    padding: .5em 0 1em 0;
+    padding: .5rem 0 1rem 0;
+  }
+  header > p{
+    margin: 1em 2em;
+    margin: 1rem 2rem;
+  }
+  .majorContents{
+    position:static;
+  }
+  .IASection img, .researchImgRows img{
+    flex:auto;
+    width:100%;
+  }
+  .wireframeImgRows, .paperPrototypeRows{
+    display: none;
+  }
+  .pizzeriaImageSlider{
+    display: flex;
+    width:100%;
+    float:left;
+    align-items: center;
+    min-height: 32em;
+    min-height: 32rem;
+    height: auto;
+  }
+  .sliderButton{
+    font-size: 36px;
+    padding: 1em;
+    padding: 1rem;
+    color:#190654;
+    background-color: #e0f7fa;
+    border-radius: 0;
+  }
+  .sliderButton:hover{
+    border: none;
+  }
+  .mySlides,.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+    display:none;
+    float:left;
+    width:70%;
+    margin: 0 auto;
+  }
+  .mySlides3{
+    width:30%;
+  }
+  #paperPrototype_video4Mob{
+    display: block;
+    width:90%;
+    margin:.6em;
+    margin:.6rem;
+  }
+  .processImage_web{
+    display: none;
+  }
+  .processImage_responsive{
+    display: block;
+    width:75%;
+  }
+  .XDPrototypeLink{
+    display: none;
+  }
+}

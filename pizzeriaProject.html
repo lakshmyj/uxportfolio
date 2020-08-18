@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzeria Project Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/projectsCommon.css">
+  <link rel="stylesheet" href="css/pizzeriaStyle.css">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <aside>
+    <div class="imageLogo">
+      <img src="resources/pizzeria/pizza-small.jpg" alt="pizza logo">
+    </div>
+    <nav id="mainNav">
+      <a href="home.html#home" onclick="setSelectedTab('home')"><i class="material-icons md-36">home</i><p>Home</p></a>
+      <a href="home.html#projects_division" class=selectedNav onclick="setSelectedTab('projects')"><i class="material-icons md-36">image</i><p>Projects</p></a>
+      <a href="home.html#about_division" onclick="setSelectedTab('about')"><i class="material-icons md-36">person</i><p>About</p></a>
+      <a href="home.html#contact_division" onclick="setSelectedTab('contact')"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+    </nav>
+    <p id="navDescription"><i>
+      <b><u>PROJECTS</u></b><br>
+      I have worked on the following projects :<br>
+      <span><b><a href="pizzeriaProject.html">•	Pizzeria </a></b></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><a href="elderCareProject.html">•	Elder Care System</a></span><br>
+      <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
+    </i></p>
+  </aside>
+  <main>
+
+    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="modalMenuDiv" class="modalMenuBG">
+      <nav id="mobNav">
+        <a href="home.html#home">Home</a>
+        <a href="home.html#projects_division">Projects</a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
+        <a href="home.html#about_division">About</a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#contact_division">Contact</a>
+      </nav>
+    </div>
+
+  <div id="modalBox" class="modal">
+    <div>
+      <input type="button" class="close zoomButton" value="&times">
+    </div>
+    <div id="modalImageContainer">
+      <img id="modalImage" class="modal-content">
+    </div>
+    <div style="text-align:center;">
+      <input type="button" id="zoomin" class="zoomButton" value="+"/>
+      <input type="button" id="zoomout" class="zoomButton" value="-"/>
+    </div>
+  </div>
+  <header>
+    <img src="resources/pizzeria/pizzeriaHeroImage.jpg" alt="pizzeria hero image">
+    <h1>Pizzeria UX design</h1>
+    <p>A full fledged UX project on re-designing a pizzeria website to make it usable so as to enable easier and faster order placement</p>
+  </header>
+  <section class="majorContents">
+    <h2>Background</h2>
+    <p>This is a full-fledged user-centric re-design project for a local pizzeria website.</p>
+    <p>The existing pizzeria website, as can be seen <a href="https://www.ajstoneovenpizzeria.com/" target="_blank" style="text-decoration:underline;">here</a> has been built with the bare essentials like a marketing flyer than like a proper online website. The website carries the restaurant's menu card and displays the bare essential store information (location, directions, store timings, services they provide etc...) serving as a mere business card. It offers no scope of shortlisting items, or comparing prices, to be able to place an order in an organized manner. All these shortcoming called for a user-centric re-architecture of the website.</p>
+    <p>The re-design is intended to improve the user experience by listing all the menu items and their prices legibly and making them easily accessible for the potential customers to browse and choose what they decide to order. As per the business specifications, it supports call-in order for0 now. The customers can enabled to shortlist all the items they plan to order which generates a wishlist that serves as a mock order allowing price comparison before proceeding to place the call-in order.</p>
+    <h2>Process</h2>
+    <p>An iterative approach is taken with the overall process consisting of the following phases:</p>
+    <img class="processImage_web" src="resources/pizzeria/process.png" alt=" process">
+    <img class="processImage_responsive" src="resources/pizzeria/processResponsive.jpg" alt="process">
+    <!-- <p><b>Motivation: </b>The potential issues in the current website are identified, the business and user goals are defined and synced. The user and task analysis is performed which gives the various key features to be included are then they are prioritized.</p> -->
+    <h2>Motivation</h2>
+    <p>The current website is analyzed and the potential issues are identified and listed. The business goals are defined along with the things that have to be considered when re-designing the new version of the website.</p>
+    <p><b>Business Goals :</b></p>
+    <ul class="nestedList1">
+      <li>To improve the brand identity and reach of the pizzeria</li>
+      <li>To increase their market share and stay ahead of their competitors</li>
+      <li>Attract new customers and retain existing customers thus increasing revenues</li>
+    </ul>
+    <p><b>Things to consider for re-designing :</b></p>
+    <ul class="nestedList1">
+      <li>Provide essential store information readily available</li>
+      <li>Find out all the basic features and options that users browse for in a typical pizzeria website</li>
+      <li>Make the website intuitive</li>
+      <li>Design a website that is in line with Jakob Nielsen's 5 quality components of usability</li>
+      <ul class="nestedList2">
+        <li><b>Learnability:</b> How easy is it for users to accomplish basic tasks the first time they encounter the design?</li>
+        <li><b>Efficiency:</b> Once users have learned the design, how quickly can they perform tasks?</li>
+        <li><b>Memorability:</b> When users return to the design after a period of not using it, how easily can they reestablish proficiency?</li>
+        <li><b>Errors:</b> How many errors do users make, how severe are these errors, and how easily can they recover from the errors?</li>
+        <li><b>Satisfaction:</b> How pleasant is it to use the design?</li>
+      </ul>
+    </ul>
+    <h2>Research</h2>
+    <p><b>Market Research : </b>I began by looking for already existing pizzeria websites that did well in the market - mainly Domino's, Pizza Hut and Papa John's International based on <a href="https://www.pizzatoday.com/pizzeria-rankings/2018-top-100-pizza-companies/" target="_blank" style="text-decoration: underline dashed;">pizzatoday's survey, 2018</a>. Based on those websites, I listed out the most important and basic features that are found on all of them in common.</p>
+    <p><b>User Surveys : </b>The next step was to back this up with some user research, to see if this was something others might be interested in and what information and features the cutomers might be looking for in a pizzeria website. I started by making a simple
+      <abbr title="A survey is a qualitative research method that consists of a set of questions that helps to collect specific information from a representative sample of target audience on their behaviours, thoughts and opinions.">survey</abbr>
+      using Google Forms and sending it out to friends, colleagues and strangers over social media, who would be potential pizza buyers. </p>
+      <div>
+        <section class="researchImgRows">
+          <img class="openOnClick" src="resources/pizzeria/research1.png" alt="survey result">
+          <img class="openOnClick" src="resources/pizzeria/research2.png" alt="survey result">
+        </section>
+        <section class="researchImgRows">
+          <img class="openOnClick" src="resources/pizzeria/research3.png" alt="survey result">
+          <img class="openOnClick" src="resources/pizzeria/research4.png" alt="survey result">
+        </section>
+        <section class="researchImgRows">
+          <img class="openOnClick" src="resources/pizzeria/research5.png" alt="survey result">
+          <img class="openOnClick" src="resources/pizzeria/research6.png" alt="survey result">
+        </section>
+      </div>
+      <p>From the user research surveys, it is clear that most of the people prefer to place call-in orders for pizza, sandwiches and salads. The most looked up information includes the menu, location, hours of operation, and deals available. They choose the pizza place based on the distance, recommendation from a friend and ratings from google/yelp/trip advisor.  </p>
+      <h3><b><u>User Analysis - Personas</u></b></h3>
+      <p>From the user research and market research, I learned that irrespective of the demographics, the consumer needs for a pizzeria had mostly similar needs and frustrations. So I pictured one persona clubbing the characterics of a potential pizzeria customer.</p>
+      <img class="pizzeriaPersona openOnClick" src="resources/pizzeria/pizzeriaPersona1.jpg" alt="persona">
+      <h3><b><u>Task Analysis - Major Scenarios</u></b></h3>
+      <p>All the major senarios are determined based on the most important tasks Badger, our primary persona chooses to do when visting the website which is primarily determined from the research survey result . The tasks are then ordered based on the possible frequencies they would be performed in.</p>
+      <ol class="senarioSection nestedList1">
+        <li>Finding a pizzeria that are trusted by others</li>
+        <li>Checking the menu </li>
+        <li>Finding the phone number to place a call-in order</li>
+        <li>Looking for pictures of food</li>
+        <li>Looking for a pizzeria that accepts credit cards</li>
+        <li>Looking for specialty menu items</li>
+        <li>Checking for discounts</li>
+        <li>Looking for a pizzeria close by</li>
+        <li>Checking the pizzeria store hours</li>
+      </ol>
+      <h3><b><u>Feature Requirements</u></b></h3>
+      <p>Based on the task analysis, the features required to be included in the design that aids in performing each task are thought of and listed:</p>
+      <ol class="nestedList2">
+        <li>
+          <b>Task    :</b> Finding a pizzeria that is trusted by others <br>
+          <b>Features:</b> Ratings, Customer testimonials, Awards <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Checking the menu  <br>
+          <b>Features:</b> Display the menu items <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Finding the phone number to place a call-in order <br>
+          <b>Features:</b> Display the phone number <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Looking for pictures of food <br>
+          <b>Features:</b> Pictures of food with their names displayed <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Looking for a pizzeria that accepts credit cards <br>
+          <b>Features:</b> Icons of credit cards, Payment system (3rd party) <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Looking for specialty menu items <br>
+          <b>Features:</b> List of specialty menu items <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Checking for discounts <br>
+          <b>Features:</b> List of discounts, coupons, promotional codes <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Looking for a pizzeria close by <br>
+          <b>Features:</b>  Map (specifying locations and feature for checking directions) <br><br>
+        </li>
+        <li>
+          <b>Task    :</b> Checking the pizzeria store hours <br>
+          <b>Features:</b> Display store hours <br><br>
+        </li>
+      </ol>
+      <h3><b><u>Consolidation of Feature List</u></b></h3>
+      <p>Based on the above feature listing, all the required features for the webapp are consolidated and prioritized as follows:</p>
+      <ol class="senarioSection nestedList2">
+        <li>Display of menu items</li>
+        <li>Display of contact number</li>
+        <li>Display of ratings/testimonials/awards</li>
+        <li>Pictures of food with their names displayed</li>
+        <li>Specification of payment modes accepted</li>
+        <li>Display speciality menu</li>
+        <li>Specification of discounts/coupons/promo codes</li>
+        <li>Specification of maps/directions</li>
+        <li>Display store hours</li>
+        <li>Display of order completion time</li>
+      </ol>
+      <h3><b><u>Information Architecture</u></b></h3>
+      <p>The information architecture with all the features listed in the above process is then decided. The primary information and hierarchy is then done which summarizes as follows:</p>
+      <div class="IASection">
+        <img class="openOnClick" src="resources/pizzeria/IA1.png" alt="information architecture">
+        <img class="openOnClick" src="resources/pizzeria/IA2.jpeg" alt="information architecture">
+      </div>
+      <h2>Low fidelity Wireframes</h2>
+      <p>Following the research summary and information architecture, I came up with multiple rough sketches of what the wireframes of each page would look like. With multiple iterations of sketches, I was able to make the UX lean by segregating the essentials from the unimportant elements were getting more and more clear. The multiple wireframes were then compared and the best design was chosen which served as the primary base design for the final website.</p>
+      <h3><b><u>Paper Prototypes</u></b></h3>
+      <p>Below are the fine tuned paper prototypes that serve as the templates for most of the basic use cases :</p>
+      <div class="paperPrototypeRows">
+        <iframe src="https://www.youtube.com/embed/9mBFP5pqxOc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img class="openOnClick" src="resources/pizzeria/paperPrototype1.jpg" alt="paper prototype">
+        <img class="openOnClick" src="resources/pizzeria/paperPrototype2.jpg" alt="paper prototype">
+        <img class="openOnClick" src="resources/pizzeria/paperPrototype3.jpg" alt="paper prototype">
+      </div>
+      <div class="pizzeriaImageSlider">
+        <button class="sliderButton" onclick="plusDivs2(-1)">&#10094;</button>
+        <img class="mySlides2 openOnClick" src="resources/pizzeria/paperPrototype1.jpg" alt="">
+        <img class="mySlides2 openOnClick" src="resources/pizzeria/paperPrototype2.jpg" alt="">
+        <img class="mySlides2 openOnClick" src="resources/pizzeria/paperPrototype3.jpg" alt="">
+        <button class="sliderButton" onclick="plusDivs2(1)">&#10095;</button>
+      </div>
+      <iframe id="paperPrototypeVideo4Mob" src="https://www.youtube.com/embed/9mBFP5pqxOc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3><b><u>Design Rationale</u></b></h3>
+      <p>From multiple prototypes for each page, the best one is chosen based on the survery results as well as competitor research. More detailed rationale for each feature placement is indicated below: </p>
+      <div class="paperPrototypeRows">
+        <img class="openOnClick" src="resources/pizzeria/rationaleWireframe1.jpg" alt="paper prototype design rationale">
+        <img class="openOnClick" src="resources/pizzeria/rationaleWireframe2.jpg" alt="paper prototype design rationale">
+        <img class="openOnClick" src="resources/pizzeria/rationaleWireframe3.jpg" alt="paper prototype design rationale">
+      </div>
+      <div class="pizzeriaImageSlider" style="height:auto;min-height:13em;min-height:13rem;">
+        <button class="sliderButton" onclick="plusDivs4(-1)">&#10094;</button>
+        <img class="mySlides4 openOnClick" src="resources/pizzeria/rationaleWireframe1.jpg" alt="design rationale">
+        <img class="mySlides4 openOnClick" src="resources/pizzeria/rationaleWireframe2.jpg" alt="design rationale">
+        <img class="mySlides4 openOnClick" src="resources/pizzeria/rationaleWireframe3.jpg" alt="design rationale">
+        <button class="sliderButton" onclick="plusDivs4(1)">&#10095;</button>
+      </div>
+      <h3><b><u>Balsamiq Wireframe</u></b></h3>
+      <p>Below is a set of wireframes based on the paper prototype. There are a total of 16 pages for the website and all of them are wireframed using Balsamiq.</p>
+      <div class="wireframeImgRows">
+        <img class="openOnClick" src="resources/pizzeria/1FullHomePage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/2FullMenuPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/3FullPizzaPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/4FullSaladsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/5FullSandwichesPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/6FullSpecialsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/7FullStartersPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/8FullEntreesPage.png" alt="wireframe">
+        <!-- </div>
+        <div class="wireframeImgRows"> -->
+        <img class="openOnClick" src="resources/pizzeria/9FullKidsMenuPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/10FullReviewsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/11FullAboutUsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/12FullServicesPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/13FullContactUsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/14FullJoinUsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/15FullDealsPage.png" alt="wireframe">
+        <img class="openOnClick" src="resources/pizzeria/16FullMyListPage.png" alt="wireframe">
+      </div>
+      <p>Below are the wireframes designed in Balsamiq for mobile users:</p>
+      <div class="wireframeImgRows responsiveScreens">
+        <img class="openOnClick" src="resources/pizzeria/1MobileHomePage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/2MobilePizzaPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/4MobileSaladsPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/5MobileSandwichesPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/6MobileSpecialsPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/7MobileStartersPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/8MobileEntreesPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/9MobileKidsMenuPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/10MobileReviewsPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/15MobileFullDealsPage.png" alt="mobile wireframe">
+        <img class="openOnClick" src="resources/pizzeria/16MobileMyList.png" alt="mobile wireframe">
+      </div>
+      <div class="pizzeriaImageSlider">
+        <button class="sliderButton" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="mySlides openOnClick" src="resources/pizzeria/1FullHomePage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/2FullMenuPage.png" alt="responsive wireframe">
+        <img class="mySlides  openOnClick" src="resources/pizzeria/3FullPizzaPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/4FullSaladsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/5FullSandwichesPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/6FullSpecialsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/7FullStartersPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/8FullEntreesPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/9FullKidsMenuPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/10FullReviewsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/11FullAboutUsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/12FullServicesPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/13FullContactUsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/14FullJoinUsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/15FullDealsPage.png" alt="responsive wireframe">
+        <img class="mySlides openOnClick" src="resources/pizzeria/16FullMyListPage.png" alt="responsive wireframe">
+        <button class="sliderButton" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <div class="pizzeriaImageSlider">
+        <button class="sliderButton" onclick="plusDivs3(-1)">&#10094;</button>
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/1MobileHomePage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/2MobilePizzaPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/4MobileSaladsPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/5MobileSandwichesPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/6MobileSpecialsPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/7MobileStartersPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/8MobileEntreesPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/9MobileKidsMenuPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/10MobileReviewsPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/15MobileFullDealsPage.png" alt="mobile responsive wireframe">
+        <img class="mySlides3 openOnClick" src="resources/pizzeria/16MobileMyList.png" alt="mobile responsive wireframe">
+        <button class="sliderButton" onclick="plusDivs3(1)">&#10095;</button>
+      </div>
+      <h2>High fidelity Prototype</h2>
+      <p>The specifications for high fidelity prototype are decided considering the human factors for experience design.</p>
+      <h3><b><u>Design Rationale</u></b></h3>
+      <div class="paperPrototypeRows">
+        <img class="openOnClick" src="resources/pizzeria/rationaleWireframe4.jpg" alt="design rationale">
+        <img class="openOnClick" src="resources/pizzeria/rationaleWireframe5.jpg" alt="design rationale">
+        <img class="openOnClick" src="resources/pizzeria/rationaleWireframe6.jpg" alt="design rationale">
+      </div>
+      <div class="pizzeriaImageSlider" style="height:auto;min-height:13em;min-height:13rem;">
+        <button class="sliderButton" onclick="plusDivs5(-1)">&#10094;</button>
+        <img class="mySlides5 openOnClick" src="resources/pizzeria/rationaleWireframe4.jpg" alt="design rationale">
+        <img class="mySlides5 openOnClick" src="resources/pizzeria/rationaleWireframe5.jpg" alt="design rationale">
+        <img class="mySlides5 openOnClick" src="resources/pizzeria/rationaleWireframe6.jpg" alt="design rationale">
+        <button class="sliderButton" onclick="plusDivs5(1)">&#10095;</button>
+      </div>
+      <h3><b><u>Adobe XD screens</u></b></h3>
+      <div class="wireframeImgRows">
+        <img class="openOnClick" src="resources/pizzeria/1HomePage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/2MenuPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/3PizzaPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/4SaladsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/5SandwichesPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/6SpecialsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/7StartersPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/8EntreesPage.png" alt="pizzeria prototype">
+        <!-- </div>
+        <div class="wireframeImgRows"> -->
+        <img class="openOnClick" src="resources/pizzeria/9KidsEntréePage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/10ReviewsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/11AboutUsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/12ServicesPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/13ContactUsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/14JoinUsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/15DealsPage.png" alt="pizzeria prototype">
+        <img class="openOnClick" src="resources/pizzeria/16MyListPage.png" alt="pizzeria prototype">
+      </div>
+      <div class="pizzeriaImageSlider">
+        <button class="sliderButton" onclick="plusDivs1(-1)">&#10094;</button>
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/1HomePage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/2MenuPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/3PizzaPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/4SaladsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/5SandwichesPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/6SpecialsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/7StartersPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/8EntreesPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/9KidsEntréePage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/10ReviewsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/11AboutUsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/12ServicesPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/13ContactUsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/14JoinUsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/15DealsPage.png" alt="pizzeria prototype">
+        <img class="mySlides1 openOnClick" src="resources/pizzeria/16MyListPage.png" alt="pizzeria prototype">
+        <button class="sliderButton" onclick="plusDivs1(1)">&#10095;</button>
+      </div>
+      <br>
+      <p>Below is the video clip demonstrating the user flow, using the website:</p>
+      <iframe src="https://www.youtube.com/embed/e83FdjYd8DA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2>Build</h2>
+      <p>According to the process, the resources used in the high fidelity prototype are then shared for developement.</p>
+      <div class="XDPrototypeLink">
+        <!-- <p>Click below to get a sense of the final pizzeria website : </p> -->
+        <p>Below is the functional version of the prototype : </p>
+        <a href="https://xd.adobe.com/view/b2ec2e57-f224-4b0a-5b5b-432953329a68-c4dd/?fullscreen" target="_blank">
+          <img title="Click me" style ="width:50%;border: 1px solid black;" src="resources/home/pizzeria.png" alt="pizzeria working prototype">
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="bottom-bar">
+      <span style="float: left;">&copy 2019 | All right reserved.</span>
+      <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
+    </div>
+    <div class="bottom-bar-mobile" style="text-align:center;">
+      <p>&copy 2019 | All right reserved.</p>
+      <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/commonScript.js" defer></script>
+  <script>
+
+  /*google Analytics code - START*/
+  // onclick="ga('send', 'event', { eventCategory: 'contactSubmit', eventAction: 'SubmitButtonClick',eventValue: 1});"
+  // iframe.document.addEventListener('click', function ga('send', 'event', { eventCategory: 'contactSubmit', eventAction: 'SubmitButtonClick',eventValue: 1}), false );
+  /*google Analytics code - END*/
+
+  /*Image slideshow START - 1st slider*/
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  /*Image slideshow END - 1st slider*/
+
+  /*Image slideshow START - 2nd slider*/
+  var slideIndex1 = 1;
+  showDivs1(slideIndex1);
+
+  function plusDivs1(n1) {
+    showDivs1(slideIndex1 += n1);
+  }
+
+  function showDivs1(n1) {
+    var i1;
+    var x1 = document.getElementsByClassName("mySlides1");
+    if (n1 > x1.length) {slideIndex1 = 1}
+    if (n1 < 1) {slideIndex1 = x1.length}
+    for (i1 = 0; i1 < x1.length; i1++) {
+      x1[i1].style.display = "none";
+    }
+    x1[slideIndex1-1].style.display = "block";
+  }
+  /*Image slideshow END - 2nd slider*/
+
+  /*Image slideshow START - 3rd slider*/
+  var slideIndex2 = 1;
+  showDivs2(slideIndex2);
+
+  function plusDivs2(n2) {
+    showDivs2(slideIndex2 += n2);
+  }
+
+  function showDivs2(n2) {
+    var i2;
+    var x2 = document.getElementsByClassName("mySlides2");
+    if (n2 > x2.length) {slideIndex2 = 1}
+    if (n2 < 1) {slideIndex2 = x2.length}
+    for (i2 = 0; i2 < x2.length; i2++) {
+      x2[i2].style.display = "none";
+    }
+    x2[slideIndex2-1].style.display = "block";
+  }
+  /*Image slideshow END - 3rd slider*/
+
+  /*Image slideshow START - 4th slider*/
+  var slideIndex3 = 1;
+  showDivs3(slideIndex3);
+
+  function plusDivs3(n3) {
+    showDivs3(slideIndex3 += n3);
+  }
+
+  function showDivs3(n3) {
+    var i3;
+    var x3 = document.getElementsByClassName("mySlides3");
+    if (n3 > x3.length) {slideIndex3 = 1}
+    if (n3 < 1) {slideIndex3 = x3.length}
+    for (i3 = 0; i3 < x3.length; i3++) {
+      x3[i3].style.display = "none";
+    }
+    x3[slideIndex3-1].style.display = "block";
+  }
+  /*Image slideshow END - 4th slider*/
+
+  /*Image slideshow START - 5th slider*/
+  var slideIndex4 = 1;
+  showDivs4(slideIndex4);
+
+  function plusDivs4(n4) {
+    showDivs4(slideIndex4 += n4);
+  }
+
+  function showDivs4(n4) {
+    var i4;
+    var x4 = document.getElementsByClassName("mySlides4");
+    if (n4 > x4.length) {slideIndex4 = 1}
+    if (n4 < 1) {slideIndex4 = x4.length}
+    for (i4 = 0; i4 < x4.length; i4++) {
+      x4[i4].style.display = "none";
+    }
+    x4[slideIndex4-1].style.display = "block";
+  }
+  /*Image slideshow END - 5th slider*/
+
+  /*Image slideshow START - 6th slider*/
+  var slideIndex5 = 1;
+  showDivs5(slideIndex5);
+
+  function plusDivs5(n5) {
+    showDivs5(slideIndex5 += n5);
+  }
+
+  function showDivs5(n5) {
+    var i5;
+    var x5 = document.getElementsByClassName("mySlides5");
+    if (n5 > x5.length) {slideIndex5 = 1}
+    if (n5 < 1) {slideIndex5 = x5.length}
+    for (i5 = 0; i5 < x5.length; i5++) {
+      x5[i5].style.display = "none";
+    }
+    x5[slideIndex5-1].style.display = "block";
+  }
+  /*Image slideshow END - 4th slider*/
+</script>
+
+</body>
+</html>

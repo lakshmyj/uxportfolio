@@ -1,0 +1,89 @@
+/*elderCare.css*/
+header img{
+  -webkit-filter: opacity(50%);
+}
+.statImages{
+  width: 75%;
+  display: block;
+  transition:1s;
+  cursor: pointer;
+}
+.statImages:hover{
+  transform: scale(1.03);
+}
+h4{
+  clear: left;
+  line-height: 250%;
+  margin:1em 0;
+}
+.mySlides {
+  display:none;
+}
+.imageSlider{
+  display: flex;
+  width:100%;
+  float:left;
+  align-items: center;
+  min-height: 10em;
+  min-height: 10rem;
+  height: auto;
+  /* height:100%;
+  height: 35em;
+  height: 35rem; */
+}
+.sliderButton{
+  font-size: 36px;
+  padding: 1em;
+  padding: 1rem;
+  color:#190654;
+  background-color: #e0f7fa;
+  border-radius: 0;
+}
+.sliderButton:hover{
+  border: none;
+}
+
+
+@media (max-width: 601px) {
+  main{
+    margin:0;
+    width:100%;
+  }
+  #hamburgerBtn{
+    position:absolute;
+    padding: 0;
+    margin: .5em;
+    margin: .5rem;
+  }
+  header{
+    position:relative;
+    margin: 0;
+    width: 100%;
+    height:auto;
+  }
+  header > img{
+    height: 100%;
+    width:100%;
+  }
+  header > h1{
+    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin: 0 0 0 3em;
+    margin: 0 0 0 3rem;
+    padding: .5em 0 1em 0;
+    padding: .5rem 0 1rem 0;
+  }
+  header > p{
+    margin: 1em 2em;
+    margin: 1rem 2rem;
+  }
+  .majorContents{
+    position:static;
+  }
+  .mySlides {
+    width:70%;
+  }
+  .statImages{
+    width:90%;
+  }
+}
