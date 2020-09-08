@@ -15,11 +15,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elder Care Project Page</title>
+  <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/projectsCommon.css">
-  <link rel="stylesheet" href="css/elderCareStyle.css">
+  <link rel="stylesheet" href="css/site.css?v=1.1">
+  <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+  <link rel="stylesheet" href="css/elderCareStyle.css?v=1.1">
 </head>
 <body oncopy="return false" onpaste="return false" oncut="return false">
   <aside>
@@ -36,8 +37,9 @@
       <b><u>PROJECTS</u></b><br>
       I have worked on the following projects :<br>
       <span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>
-      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><a href="ninjaFolioProject.html">•	Online Portfolio</a></span><br>
       <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
       <span><b><a href="elderCareProject.html">•	Elder Care System</a></b></span><br>
       <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
     </i></p>
@@ -45,21 +47,32 @@
 
   <main>
 
-    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" src="resources/elderCare/MobElderCareBGblur.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 class="PageTitle4Mob" style="top:0;">UX in Elder Care Support System</h3>
+    </div>
     <div id="modalMenuDiv" class="modalMenuBG">
       <nav id="mobNav">
         <a href="home.html#home">Home</a>
-        <a href="home.html#projects_division">Projects</a>
-        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
-        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
-        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
-        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
-        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
-        <a href="home.html#about_division">About</a>
-        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
-        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
-        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
-        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#projects_division">
+          Projects
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria</a>
+        <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Bentley.edu</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Amazon.com</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Online Banking</a>
+        <a href="home.html#about_division">
+          About
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Testimonials</a>
         <a href="home.html#contact_division">Contact</a>
       </nav>
     </div>
@@ -78,15 +91,31 @@
     </div>
   </div>
 
-  <header>
-    <img src="resources/elderCare/ElderCareBG.jpg" alt="elder care hero image">
-    <h1>UX in Elder Care Support System</h1>
-    <p>Performing user and task analysis including persona definition and feature prioritisation for an elder care support system</p>
+  <header id="elderCareHeader">
+    <img src="resources/elderCare/ElderCareBGblur.jpg" alt="elder care hero image">
+    <!-- <img src="resources/elderCare/ElderCareBG.jpg" alt="elder care hero image"> -->
+    <h1 class="pageTitle">UX in Elder Care Support System</h1>
+    <p>Performing user and task analysis including persona definition and feature prioritization for an elder care support system</p>
   </header>
+  <div class="detailsContainer">
+    <section class="projectIndex">
+      <p><u>SECTIONS</u></p>
+      <p><a href="#useranalysis">User Analysis</a></p>
+      <p><a href="#applnreq">Application Requirements</a></p>
+      <p><a href="#userProfile">User Profiles</a></p>
+      <p><a href="#userCharacteristics">User Characteristics</a></p>
+      <p><a href="#userGoals">User Goals</a></p>
+      <p><a href="#taskAnalysis">Task Analysis</a></p>
+      <p><a href="#processLevelCategories">Process Level Categories</a></p>
+      <p><a href="#macroLevelTasks">Macro Level Tasks</a></p>
+      <p><a href="#taskValueMatrix">Task Value Matrix</a></p>
+      <p><a href="#microLevelTasks">Micro Level Tasks</a></p>
+      <p><a href="#reqTable">Requirements Table</a></p>
+      <p><a href="#dataToDesign">Data To Design</a></p>
+    </section>
   <section class="majorContents">
-    <p>This project is intended to analyze the insights on the creation of an elder care support system from scratch. The information analysis enables to
+    <p>This project is intended to analyze the requirements and offer insights on the creation of an elder care support system from scratch. The information analysis enables the following:</p>
       <ul class="nestedList1">
-        <li>Better understand the user’s goals</li>
         <li>Better understand the user’s goals</li>
         <li>Work that support these goals</li>
         <li>Task structure</li>
@@ -96,10 +125,9 @@
         <li>The role of the user</li>
         <li>Work that can be automated through system design</li>
       </ul>
-    </p>
-    <h3>User Analysis</h3>
+    <h3 id="useranalysis">User Analysis</h3>
     <p>The user and task analysis strives to improve human productivity, enhance product loyalty, reduce errors, shorten learning requirements, reduce mental workload and enhance the quality of the user/customer experience. When this analysis is properly executed, overall system complexity is generally reduced.</p>
-    <p>User abilities will be limited esp ability of elderly. So it is necessary to design by critical thinking considering all possibilities in detail. For elder care support system, the major stakeholders/user profiles would be :
+    <p>User abilities will be limited especially abilities of the elderly. So it is necessary to design by critical thinking considering all possibilities in detail. For elder care support system, the major stakeholders/user profiles would be :</p>
       <ol class="nestedList1">
         <li>Elderly</li>
         <li>Agency</li>
@@ -107,9 +135,8 @@
         <li>3rd-Party service provider <abbr title="Point Of Contact">POC</abbr></li>
         <li>Family <abbr title="Point Of Contact">POC</abbr></li>
       </ol>
-    </p>
-    <h4><u>Application Requirements</u></h4>
-    <p>The application requirements from various stakeholder perspective is brainstormed. This is an iterative process done by brainstorming the various stakeholders, market research and user research. Below are the application requirements from the 2 major stakeholders - the agency and the family member :</p>
+    <h4 id="applnreq"><u>Application Requirements</u></h4>
+    <p>The application requirements from various stakeholder perspectives are brainstormed. This is an iterative process done by brainstorming the various stakeholders, market research and user research. Below are the application requirements from the 2 major stakeholders - the agency and the family member :</p>
     <button class="accordion">Client Requirements based on Agency/Business Perspective</button>
     <div class="panel">
       <ul class="nestedList1">
@@ -185,7 +212,7 @@
         <ul class="nestedList2">
           <li>Strengthen relationships between clients and personal relationships.</li>
           <li>Minimize disruptions by arranging alternatives and backups</li>
-          <li>Keep customers alive for long by proper care and improving their quality of life</li>
+          <li>Improve customer life expectancy through proper care and by improving their quality of life</li>
           <li>Preserve the elderly's dignity and independence by involving them in whatever activity they like</li>
           <li>Personalized, convenient and flexible care for different client needs</li>
         </ul>
@@ -236,7 +263,7 @@
         </ul>
       </ul>
     </div>
-    <h4><u>Defining User Profiles </u></h4>
+    <h4 id="userProfile"><u>Defining User Profiles </u></h4>
     <p>The major user profiles are then defined out of the various stakeholders based on their priorities in using the application.</p>
     <button class="accordion">Family POC</button>
     <div class="panel">
@@ -300,19 +327,20 @@
       </ul>
     </div>
   </ul>
-  <h4><u>Defining User Characteristics </u></h4>
-  <p>The characteristics of each user profiles are then thought upon and documented.</p>
-  <div class="imageSlider">
-    <button class="sliderButton" onclick="plusDivs(-1)">&#10094;</button>
-    <img class="mySlides openOnClick" src="resources/elderCare/Persona1.jpg" alt="persona 1">
-    <img class="mySlides openOnClick" src="resources/elderCare/Persona2.png" alt="persona 2">
-    <img class="mySlides openOnClick" src="resources/elderCare/Persona3.png" alt="persona 3">
-    <img class="mySlides openOnClick" src="resources/elderCare/Persona4.png" alt="persona 4">
-    <button class="sliderButton" onclick="plusDivs(1)">&#10095;</button>
+  <h4 id="userCharacteristics"><u>Defining User Characteristics </u></h4>
+  <p>The characteristics of each user profile are then thought upon and documented.</p>
+
+  <div class="slideshow-container">
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <div class="mySlides1"><img class="openOnClick" src="resources/elderCare/Persona1.jpg"></div>
+    <div class="mySlides1"><img class="openOnClick" src="resources/elderCare/Persona2.png"></div>
+    <div class="mySlides1"><img class="openOnClick" src="resources/elderCare/Persona3.png"></div>
+    <div class="mySlides1"><img class="openOnClick" src="resources/elderCare/Persona4.png"></div>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
   </div>
 
-  <h4><u>Defining the User Goals</u></h4>
-  <p>Goals are those which the various profiles tries to achieve. It determines the users desired outcome that connects to the vaue proportion. The high level goals are then listed after which it is retrospected on how the stakeholders feel on those.</p>
+  <h4 id="userGoals"><u>Defining the User Goals</u></h4>
+  <p>Goals are those which the various profiles try to achieve. It determines' the users desired outcome that connects to the value proportion. The high level goals are then listed after which it is introspected on how the stakeholders feel on those.</p>
   <button class="accordion">High Level goals of Persona1 : Elderly</button>
   <div class="panel">
     <ul class="nestedList1">
@@ -334,7 +362,7 @@
   <div class="panel">
     <ul class="nestedList1">
       <li>Get paid constantly </li>
-      <li>Gain experience and step ahead on their career</li>
+      <li>Gain experience and step ahead in their career</li>
       <li>Provide best experience to the client, thus improving agency profile, thus making their position in the agency safe for longer period if needed</li>
       <li>Be happy and satisfied for being help to the elderly	</li>
     </ul>
@@ -349,8 +377,10 @@
       <li>Quick and easy access to elderly's health and day-to-day updates</li>
     </ul>
   </div>
-  <h4><u>Define Process Level Categories</u></h4>
-  <p>The required data are gathered based on various methods : Ethnographic studies, Cognitive interviews, Surveys, Focus groups, Journal studies or Experience sampling of the prospective stakeholders. The process level categories are then listed upon without getting into the depth of each.</p>
+  <h3 id="taskAnalysis">Task Analysis</h3>
+  <p>The required data are gathered based on various methods : Ethnographic studies, Cognitive interviews, Surveys, Focus groups, Journal studies or Experience sampling of the prospective stakeholders. </p>
+  <h4 id="processLevelCategories"><u>Define Process Level Categories</u></h4>
+  <p>The process level categories are then listed upon without getting into the depth of each.</p>
   <button class="accordion">Process Level goals of Persona1 : Elderly</button>
   <div class="panel">
     <ul class="nestedList1">
@@ -392,7 +422,7 @@
       <li>View and register service options covered under health plan</li>
     </ul>
   </div>
-  <h4><u>Consolidated Macro level process goals/tasks</u></h4>
+  <h4 id="macroLevelTasks"><u>Consolidated Macro level process goals/tasks</u></h4>
   <p>The above listed macro level process goals across all the profiles are then clubbed based on their shared goals and then they are sorted based on their priorities</p>
   <ol class="nestedList2" style="line-height:2em;line-height:2rem;">
     <li>Number of clients and years of establishment details to showcase the agency’s credibility</li>
@@ -408,11 +438,10 @@
     <li>Employee login with provisions to view and update profile, view training docs, payrolls, leaves, attendance levels, log complaints and ratings  </li>
     <li>Admin login to maintain license records and their expiry alerts, view client and employee pages as well </li>
   </ol>
-  <h4><u>Task Value Matrix</u></h4>
+  <h4 id="taskValueMatrix"><u>Task Value Matrix</u></h4>
   <p>The task-value matrix is plotted to identify and negotiate conflicts across profiles, inform trade-offs, and to separate universal requirements from profile-specific requirements. It is also aimed to satisfy the requirements of the most “needy users” while supporting the needs of the more capable, motivated users by connecting the value of task attached to each profile and their expertise.</p>
   <img class="statImages openOnClick" src="resources/elderCare/taskValueMatrix.png" alt="task value matrix">
-  <h4><u>Micro-level Task Analysis</u></h4>
-  <p></p>
+  <h4 id="microLevelTasks"><u>Micro-level Task Analysis</u></h4>
   <p>The micro level tasks for each of the macro level tasks are broken into progressively smaller units as listed below. It provides clear concise and measurable rationale outcomes.</p>
   <button class="accordion"><b>Macro level task 1:</b> Log into daily activity tracker (medication, mood, sleep, food)</button>
   <div class="panel">
@@ -420,8 +449,7 @@
       <li>Log into the care coordinator profile </li>
       <li>Choose the client profile they are working for</li>
       <li>Choose the daily activity logger option</li>
-      <li>Create a new one for that particular day if it is the first time they logs for the day
-        Else choose and already created log for that day</li>
+      <li>Create a new one for that particular day if it is the first time they log for the day, else choose an already created log for that day</li>
         <li>Log the details about the elderly activity information at hand </li>
         <li>Save it</li>
         <li>Exit the application</li>
@@ -524,24 +552,28 @@
         <li>Exit application</li>
       </ol>
     </div>
-    <h4><u>Requirements Table</u></h4>
-    <p>The above task analysis is a user centric approach designed across the user profile – care coordinator helps to align the business goals, user goals, task requirements and its value proposition in a more understandable way ensuring that the application covers all the required functionalities and makes it usable for the users.</p>
+    <h4 id="reqTable"><u>Requirements Table</u></h4>
+    <p>The above task analysis is a user centric approach designed across the user profile – care coordinator: helps to align the business goals, user goals, task requirements and its value proposition in a more understandable way ensuring that the application covers all the required functionalities and makes it usable for the users.</p>
     <iframe width="100%" height="346" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=408600C3A3543E0E%211744&authkey=%21AApwYTr3NXocohY&em=2&wdAllowInteractivity=False&ActiveCell='Requirements%20Table'!A1&wdInConfigurator=True"></iframe>
-    <h4><u>Data to Design</u></h4>
-    <p>Based on the requirements table, the features are prioritized and the information architecture is sketched. Then multiple paper prototypes are designed out of which the most apt design is chosen which is then converted into low fidelity protoypes. User testing could be performed on this low fidelity prototype to confirm the design.</p>
-    <p>Once the low fidelity protoypes are tested and iterated for modifications, if needed, based on the test result, the final design is confirmed, after which the high fidelity prototypes are designed which are then handed over to the developement team for its build.</p>
-  </section>
+    <h4 id="dataToDesign"><u>Data to Design</u></h4>
+    <p>Based on the requirements table, the features are prioritized and the information architecture is sketched. Then multiple paper prototypes are designed out of which the most apt design is chosen which is then converted into low fidelity prototypes. User testing could be performed on this low fidelity prototype to confirm the design.</p>
+    <p>Once the low fidelity prototypes are tested and iterated for modifications, if needed, based on the test result, the final design is confirmed, after which the high fidelity prototypes are designed which are then handed over to the development team for its build.</p>
+
+    <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+      <a href="#elderCareHeader">
+        <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+      </a>
+    </div>
+  <footer>
+    <div class="bottom-bar" >
+      <p style="text-align:center;line-height:.5em;line-height:.5rem;">&copy 2019 | All right reserved.</p>
+      <p style="text-align:center;line-height:.5em;line-height:.5rem;">Hand coded and compiled by Lakshmy Jayalakshmy</p>
+      <!-- <p style="text-align:center;line-height:.rem;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+    </div>
+  </footer>
+</section>
+</div>
 </main>
-<footer>
-  <div class="bottom-bar">
-    <span style="float: left;">&copy 2019 | All right reserved.</span>
-    <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
-  </div>
-  <div class="bottom-bar-mobile" style="text-align:center;">
-    <p>&copy 2019 | All right reserved.</p>
-    <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
-  </div>
-</footer>
 
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="js/commonScript.js"></script>
@@ -549,22 +581,23 @@
 <script type="text/javascript">
 
 /*Image slideshow START - 1st slider*/
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex = [1,1];
+var slideId = ["mySlides1"]
+showSlides(1, 0);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
 
-function showDivs(n) {
+function showSlides(n, no) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+     x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex[no]-1].style.display = "block";
 }
 /*Image slideshow END - 1st slider*/
 </script>

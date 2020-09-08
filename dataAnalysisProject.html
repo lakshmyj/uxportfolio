@@ -15,13 +15,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Measuring UX Project Page</title>
+  <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/projectsCommon.css">
-  <link rel="stylesheet" href="css/dataAnalysisStyle.css">
+  <link rel="stylesheet" href="css/site.css?v=1.1">
+  <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+  <link rel="stylesheet" href="css/dataAnalysisStyle.css?v=1.1">
 </head>
-<body oncopy="return false" onpaste="return false" oncut="return false">
+<!-- <body oncopy="return false" onpaste="return false" oncut="return false"> -->
+<body>
   <aside>
     <div class="imageLogo">
       <img src="resources/measuringUX/BankLogo.jpg" alt="BOA WellsFargo logo">
@@ -36,8 +38,9 @@
       <b><u>PROJECTS</u></b><br>
       I have worked on the following projects :<br>
       <span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>
-      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><a href="ninjaFolioProject.html">•	Online Portfolio</a></span><br>
       <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
       <span><a href="elderCareProject.html">•	Elder Care System</a></span><br>
       <span><b><a href="dataAnalysisProject.html">•	Online Banking</a></b></span><br>
     </i></p>
@@ -45,21 +48,32 @@
 
   <main>
 
-    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" src="resources/measuringUX/MobWells-fargo_BOA_BGblur.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 class="PageTitle4Mob">UX Measurement in Online Banking</h3>
+    </div>
     <div id="modalMenuDiv" class="modalMenuBG">
       <nav id="mobNav">
         <a href="home.html#home">Home</a>
-        <a href="home.html#projects_division">Projects</a>
-        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
-        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
-        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
-        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
-        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
-        <a href="home.html#about_division">About</a>
-        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
-        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
-        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
-        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#projects_division">
+          Projects
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria</a>
+        <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Bentley.edu</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Amazon.com</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Online Banking</a>
+        <a href="home.html#about_division">
+          About
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Testimonials</a>
         <a href="home.html#contact_division">Contact</a>
       </nav>
     </div>
@@ -77,21 +91,44 @@
     </div>
   </div>
 
-  <header>
-    <img src="resources/measuringUX/Wells-fargo_BOA_BG.jpg" alt="BOA WellsFargo hero image">
-    <h1>UX Measurement in Online Banking</h1>
-    <p>Quantitative analysis of twinned usability test result data sets of Bank of America and WellsFargo to measure the user experience</p>
+  <header id="dataAnalysisHeader">
+    <!-- <img src="resources/measuringUX/Wells-fargo_BOA_BG.jpg" alt="BOA WellsFargo hero image"> -->
+    <img src="resources/measuringUX/Wells-fargo_BOA_BGblur.jpg" alt="BOA WellsFargo hero image">
+    <h1 class="pageTitle">UX Measurement in Online Banking</h1>
+    <p>Quantitative analysis of twinned usability test result data sets of Bank of America and Wells Fargo to measure the user experience</p>
   </header>
+  <div class="detailsContainer">
+    <section class="projectIndex">
+      <p><u>SECTIONS</u></p>
+      <p><a href="#background">Background</a></p>
+      <p><a href="#legend">Legend</a></p>
+      <p><a href="#taskSuccess">Task Success Data</a></p>
+      <p><a href="#taskTime">Task Time Data</a></p>
+      <p><a href="#easeRatings">Task Ease Ratings</a></p>
+      <p><a href="#visualAppeal">Ease Of Finding</a></p>
+      <p><a href="#visualAppeal">Visual Appeal</a></p>
+      <p><a href="#SUSRatings">SUS Ratings</a></p>
+      <p><a href="#overallResults">Overall Results</a></p>
+    </section>
   <section class="majorContents">
-    <h2>Background and Purpose of study</h2>
-    <p>This project is performed over the twinned usability test result data set of BOA and Wells Fargo to study both the online banking websites based on various user experience criterias.
-      The data is collected by conducting a study with 84 participants where each participant is provided with 6 randomly selected and ordered tasks out of a total set of 10 tasks.
-      <p>Below  is the spreadsheet with the usability test data with the corresponding math perfomed for detailed analysis and comparison. There are a total of 8 worksheets - task success rate, time-on-task, , ease rating, ease-of-finding and visual appeal score, SUS scores, a co-relation calculation sheet, z-scores calculation and finally the overall comparison data. Each worksheet has data of BOA and WellsFargo listed side by side.</p>
-      <p>
+    <h2 id="background">Background and Purpose of study</h2>
+    <p>This project is performed over the twinned usability test result data set of BOA and Wells Fargo to study both the online banking websites based on various user experience criteria. The test determines if the websites meets the human-centered design goals as per the ISO standards: effectiveness, efficiency and user satisfaction.</p>
+    <p>The data is collected by conducting a study with 84 participants where each participant is provided with 6 randomly selected and ordered tasks out of a total set of 10 tasks. The tasks provided for the study are as listed below:</p>
+      <ol class="nestedList2">
+        <li>What is my overdraft fee?</li>
+        <li>Find a statement from one year ago</li>
+        <li>What is the fee to withdraw money internationally?</li>
+        <li>Transfer money between checking and saving account</li>
+        <li>Find the routing number</li>
+        <li>Set up Bill Pay</li>
+        <li>Change password</li>
+        <li>Open a new account</li>
+        <li>Set up an alert</li>
+        <li>Find the closest ATM</li>
+      </ol>
+      <p>Below  is the spreadsheet with the usability test data with the corresponding math performed for detailed analysis and comparison. There are a total of 8 worksheets - task success rate, time-on-task, ease rating, ease-of-finding and visual appeal score, SUS scores, a co-relation calculation sheet, z-scores calculation and finally the overall comparison data. Each worksheet has data of BOA and Wells Fargo listed side by side.</p>
         <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=408600C3A3543E0E%211738&authkey=%21AOlve4l4uPg4RoI&em=2&wdAllowInteractivity=False&wdInConfigurator=True"></iframe>
-      </p>
-    </p>
-    <button class="accordion">LEGEND</button>
+    <button id="legend" class="accordion">LEGEND</button>
     <div class="panel">
       <p>Below are the terminologies, metric and formula referred in this project</p>
       <ul class="nestedList1">
@@ -103,12 +140,12 @@
         <li>The confidence level is the upper and lower limits of the confidence interval represented by :<br> Upper limit  =  mean + 95% confidence level;<br> Lower limit = mean -  95% confidence level </li>
         <li>TTest is used to compare means of 2 data set represented in excel by: = TTEST(array1, array2, x, y) <br> where	x = 2 (for two-tailed test) in almost all cases	[ In one-tailed test, one site 2 can be > or = site 1], y = 2 (independent samples – between subjects), y = 1 (paired samples – within subjects)</li>
         <li>The time data is cleaned up by eliminating outlier in the scatter plot and using the quartile method : <br>Low outlier = 1st quartile – 1.5 * difference;<br> High outlier = 3rd quartile + 1.5 * difference </li>
-        <li>For likert scale data, top 2 and bottom 2 box scores are calculated by considering top 2 scores as high and bottom 2 as low to analyze quantitatively</li>
+        <li>For Likert scale data, top 2 and bottom 2 box scores are calculated by considering top 2 scores as high and bottom 2 as low to analyze quantitatively</li>
         <li>Correlation looks at the relationship and association between two variables represented in excel by: = CORREL(array1, array2) <br>where the arrays are the data set from the sample</li>
         <li>z-scores helps combining metrics that have different scales for easier comparison represented by: = STANDARDIZE (xi, x_bar, s) <br>where xi is the value from the sample to be standardized,  x_bar is the mean and s is the standard deviation</li>
       </ul>
     </div>
-    <h2>Task Success Data</h2>
+    <h2 id="taskSuccess">Task Success Data</h2>
     <p><i>Process: From the task success/completion data collected, the mean completion rate and the confidence interval with a confidence level of 90% is calculated. A graph is plotted with the mean percentages against the success rates with an error bar based on the confidence interval.</i></p>
     <p>From the graph, it is clear that for tasks# 1, 2, 3 and 6 both the banks provide more or less similar success rates. However, there are significant differences in completion rates for tasks 4, 5, 7, 8, 9 and 10 between the websites. </p>
     <p>Wells Fargo does significantly better in task# 9, to set up an alert where there is a difference of 30% in the performance as compared to BOA. Except this task, for all the other tasks, BOA proves better, especially in task#10, to find closest ATM where BOA exceeds Wells Fargo way ahead with a hike of 40%. The confidence interval for BOA is smaller as compared to that for Wells Fargo which indicates that the interpretation would be consistent across studies.</p>
@@ -117,16 +154,16 @@
       <img class="openOnClick" src="resources/measuringUX/graph01.png" alt="task success graph BOA">
       <img class="openOnClick" src="resources/measuringUX/graph02.png" alt="task success graph WellsFargo">
     </div>
-    <h2>Task Time Data</h2>
+    <h2 id="taskTime">Task Time Data</h2>
     <p><i>Process: The time data obtained from the study is cleaned up by removing the outliers using the quartile method. The higher and lower outlier limits are calculated for each task across both the websites time data and all the values above and below the outlier bounds are removed. </i></p>
     <p><i>The median of the cleaned up data is calculated which reduces the effect of the remaining outliers if any and a graph is plotted with the median values across the time on task with an error bar based on the confidence interval calculated with a confidence level of 95%.</i></p>
-    <p>From the graph, we can infer that for tasks# 4, 8 and 10, BOA is significantly more efficient which includes, transfer money between saving and checking account, open a new account and find closest ATM. Whereas, Wells Fargo proves to be more efficient that BOA in tasks# 7 and 9 which includes, changing password and setup and alert. </p>
-    <p>However for all the tasks in general, BOA stands ahead of Wells Fargo even if it is just marginal difference. The error bars also implicates wider intervals for Wells Fargo as compared to the intervals for BOA which again says that the results would remain consistent across evaluations.  </p>
+    <p>From the graph, we can infer that for tasks# 4, 8 and 10, BOA is significantly more efficient which includes, transfer money between saving and checking account, open a new account and find closest ATM. Whereas, Wells Fargo proves to be more efficient than BOA in tasks# 7 and 9 which includes, changing password and setup and alert. </p>
+    <p>However for all the tasks in general, BOA stands ahead of Wells Fargo even if it is just marginal difference. The error bars also implicate wider intervals for Wells Fargo as compared to the intervals for BOA which again says that the results would remain consistent across evaluations.  </p>
     <div class="imageDiv">
       <img class="openOnClick" src="resources/measuringUX/graph03.png" alt="time data graph BOA">
       <img class="openOnClick" src="resources/measuringUX/graph04.png" alt="time data graph WellsFargo">
     </div>
-    <h2>Task Ease Ratings</h2>
+    <h2 id="easeRatings">Task Ease Ratings</h2>
     <p><i>Process: From the task ratings data, the top-2-box ratings for each task are calculated. Including the top-2-box approach gives a gist of overall ease rating across each task which helps in setting task improvement/fix priorities. </i></p>
     <p><i>A combination graph is plotted with the mean rating and top-2-box rankings across each task for both BOA and Wells Fargo for easy comparison.</i></p>
     <p>The mean rating graph says that except for task#7 and 9, changing passwords and setup an alert, the ratings are fairly higher for BOA as compared to Wells Fargo. Overall score for BOA stands close to 4.5 which is a good overall rating for a website. </p>
@@ -135,7 +172,7 @@
       <img class="openOnClick" src="resources/measuringUX/graph05.png" alt="Task Ease Ratings graph BOA">
       <img class="openOnClick" src="resources/measuringUX/graph06.png" alt="Task Ease Ratings graph WellsFargo">
     </div>
-    <h2>Ratings of “Ease of Finding Information” and “Visual Appeal”</h2>
+    <h2 id="visualAppeal">Ratings of “Ease of Finding Information” and “Visual Appeal”</h2>
     <p><i>Process: The ease of finding and visual appeal data is the overall rating collected out of a scale of 1-7, with 7 being the best score. </i></p>
     <p><i>The mean of ratings are calculated and is plotted against both the websites for analysis.</i></p>
     <p>From the ease-of-use graph, BOA stands marginally higher than Wells Fargo and as for the visual appeal, Wells Fargo stands way ahead than BOA. The ease of rating as well as visual appeal of Wells Fargo stands more consistent with mean ratings of 5.0 and 4.5 than that of BOA with ratings of 5.5 and 2.2 respectively. </p>
@@ -143,37 +180,42 @@
       <img class="openOnClick" src="resources/measuringUX/graph07.png" alt="ease of finding graph">
       <img class="openOnClick" src="resources/measuringUX/graph08.png" alt="visual appeal graph">
     </div>
-    <h2>SUS Ratings</h2>
+    <h2 id="SUSRatings">SUS Ratings</h2>
     <p><i>Process: The overall SUS scores are calculated from the data across 10 studies. The frequency distributions are then computed along with the mean of the percentiles. A graph is then plotted with the average SUS scores against the frequency distributions of both websites.</i></p>
-    <p>From the SUS score graph, BOA has obtained 13 scores in between 51-60 which is good and only 6 scores below 40 who are the possible ‘detractors’. While the Wells Fargo has 11 scores in between 71-80 which is good and it has 8 scores below 40 who could be categorized as the ‘detractors’. BOA has 7 promoters while Wells Fargo has only 4 promoters.</p>
+    <p>From the SUS score graph, BOA has obtained 13 scores in between 51-60 which is good and only 6 scores below 40 who are the possible ‘detractors’. While Wells Fargo has 11 scores in between 71-80 which is good and it has 8 scores below 40 who could be categorized as the ‘detractors’. BOA has 7 promoters while Wells Fargo has only 4 promoters.</p>
     <p>Comparatively, the overall ranking based on SUS is more supportive to BOA than Wells Fargo in terms of promoters.</p>
     <img class="openOnClick" style="width:50%;" src="resources/measuringUX/graph09.png" alt="SUS score graph">
     <p>Relationships between variables – ease rating Vs visual appeal</p>
     <p><i>Process: The correlation coefficients of BOA and Wells Fargo are calculated for the ease rating and visual appeal and a scatter plot is charted.</i></p>
-    <p>Both the scatter plots convey that there is a direct linear relationship between the ease of rating and visual appeal. The ease rating is higher for those with good overall visual appeal rating. Hence it is reasonable to consider the visual appeal in order to increase the overall ease rating.</p>
+    <p>Both the scatter plots convey that there is a direct linear relationship between the ease rating and visual appeal. The ease rating is higher for those with good overall visual appeal rating. Hence it is reasonable to consider the visual appeal in order to increase the overall ease rating.</p>
     <div class="imageDiv">
       <img class="openOnClick" src="resources/measuringUX/graph10.png" alt="correlation graph">
       <img class="openOnClick" src="resources/measuringUX/graph11.png" alt="correlation graph">
     </div>
-    <h2>Overall Results</h2>
+    <h2 id="overallResults">Overall Results</h2>
     <p><i>Process: The average time-on-task, task success and user rating is calculated from which the z-score ratings for each are derived. This normalizes all the 3 scores and finally the mean of all the 3 z-scores is calculated and a graph is plotted to compare the overall performance of both the websites. </i></p>
-    <p>Overall, the performance of both BOA and Wells Fargo are more or less similar, however BOA stands ahead of Wells Fargo marginally.</p>
+    <!-- <p>Overall, the performance of both BOA and Wells Fargo are more or less similar, however BOA stands ahead of Wells Fargo marginally but not statistically significantly.</p> -->
     <img class="openOnClick"  style="width:50%;" src="resources/measuringUX/graph12.png" alt="overall z-score graph">
     <p>All the test results are summarized in the table below :</p>
     <img style="width:60%;" class="openOnClick" src="resources/measuringUX/table.png" alt="overall evaluation summary">
-    <p>So based on all the evaluation data, BOA appears to be better than Wells Fargo overall.</p>
-  </section>
+    <p>Overall, it can be seen that there is no significant difference between the online user experience offered by BOA and Wells Fargo at a confidence level of 95%. It can only be interpreted that BOA scores marginally higher and therefore has a higher overall usability index.</p>
+    <!-- <p>So based on all the evaluation data, BOA appears to be better than Wells Fargo overall.</p> -->
+
+    <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+      <a href="#dataAnalysisHeader">
+        <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+      </a>
+    </div>
+  <footer>
+    <div class="bottom-bar" >
+      <p style="text-align:center;line-height:.5em;line-height:.5rem;">&copy 2019 | All right reserved.</p>
+      <p style="text-align:center;line-height:.5em;line-height:.5rem;">Hand coded and compiled by Lakshmy Jayalakshmy</p>
+      <!-- <p style="text-align:center;line-height:.rem;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+    </div>
+  </footer>
+</section>
+</div>
 </main>
-<footer>
-  <div class="bottom-bar">
-    <span style="float: left;">&copy 2019 | All right reserved.</span>
-    <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
-  </div>
-  <div class="bottom-bar-mobile" style="text-align:center;">
-    <p>&copy 2019 | All right reserved.</p>
-    <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
-  </div>
-</footer>
 
 <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="js/commonScript.js"></script>

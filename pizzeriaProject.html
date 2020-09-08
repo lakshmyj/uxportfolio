@@ -15,11 +15,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizzeria Project Page</title>
+  <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/projectsCommon.css">
-  <link rel="stylesheet" href="css/pizzeriaStyle.css">
+  <link rel="stylesheet" href="css/site.css?v=1.1">
+  <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+  <link rel="stylesheet" href="css/pizzeriaStyle.css?v=1.1">
 </head>
 <body oncopy="return false" onpaste="return false" oncut="return false">
   <aside>
@@ -36,29 +37,41 @@
       <b><u>PROJECTS</u></b><br>
       I have worked on the following projects :<br>
       <span><b><a href="pizzeriaProject.html">•	Pizzeria </a></b></span><br>
-      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><a href="ninjaFolioProject.html">•	Online Portfolio</a></span><br>
       <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
       <span><a href="elderCareProject.html">•	Elder Care System</a></span><br>
       <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
     </i></p>
   </aside>
   <main>
 
-    <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" style="z-index:0;" src="resources/pizzeria/MobpizzeriaHeroImageblur.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 class="PageTitle4Mob" style="top:0;">Pizzeria UX design</h3>
+    </div>
     <div id="modalMenuDiv" class="modalMenuBG">
       <nav id="mobNav">
         <a href="home.html#home">Home</a>
-        <a href="home.html#projects_division">Projects</a>
-        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp&nbsp•Pizzeria</a>
-        <a href="amazonProject.html" onclick="hideMenu()">&nbsp&nbsp•Amazon.com</a>
-        <a href="utProject.html" onclick="hideMenu()">&nbsp&nbsp•Bentley.edu</a>
-        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp&nbsp•Elder Care System</a>
-        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp&nbsp•Online Banking</a>
-        <a href="home.html#about_division">About</a>
-        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp&nbsp•Credo</a>
-        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp&nbsp•Skillsets</a>
-        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp&nbsp•Qualifications</a>
-        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp&nbsp•Testimonials</a>
+        <a href="home.html#projects_division">
+          Projects
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Pizzeria</a>
+        <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Portfolio</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Bentley.edu</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Amazon.com</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Online Banking</a>
+        <a href="home.html#about_division">
+          About
+          &nbsp;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp;&nbsp;•&nbsp;Testimonials</a>
         <a href="home.html#contact_division">Contact</a>
       </nav>
     </div>
@@ -75,22 +88,52 @@
       <input type="button" id="zoomout" class="zoomButton" value="-"/>
     </div>
   </div>
-  <header>
-    <img src="resources/pizzeria/pizzeriaHeroImage.jpg" alt="pizzeria hero image">
-    <h1>Pizzeria UX design</h1>
-    <p>A full fledged UX project on re-designing a pizzeria website to make it usable so as to enable easier and faster order placement</p>
+
+  <header id=pizzeriaHeader>
+    <img src="resources/pizzeria/pizzeriaHeroImageblur.jpg" alt="pizzeria hero image">
+    <h1 class="pageTitle">Pizzeria UX Re-design</h1>
+    <p>A full-fledged UX project on re-designing a pizzeria website to make it usable so as to enable easier and faster order placement</p>
   </header>
+
+<div class="detailsContainer">
+  <section class="projectIndex">
+    <p><u>SECTIONS</u></p>
+    <p><a href="#background">Background</a></p>
+    <p><a href="#process">Process</a></p>
+    <p><a href="#analysis">Analysis</a></p>
+    <p><a href="#research">Research</a></p>
+    <p><a href="#persona">User Analysis - Personas</a></p>
+    <p><a href="#features">Task Analysis - Features</a></p>
+    <p><a href="#informationArchitecture">Information Architecture</a></p>
+    <!-- <ul class="nestedList2">
+      <li><a href="#persona">User Analysis - Personas</a></li>
+      <li><a href="#features">Task Analysis - Features</a></li>
+      <li><a href="#informationArchitecture">Information Architecture</a></li>
+    </ul> -->
+    <p><a href="#lowFidelity">Low Fidelity Wireframes</a></p>
+    <p><a href="#paperPrototype">Paper Prototypes</a></p>
+    <p><a href="#balsamiqWireframes">Balsamiq Wireframes</a></p>
+    <!-- <ul class="nestedList2">
+      <li><a href="#paperPrototype">Paper Prototypes</a></li>
+      <li><a href="#balsamiqWireframes">Balsamiq Wireframes</a></li>
+    </ul> -->
+    <p><a href="#highFidelity">High Fidelity Prototypes</a></p>
+    <p><a href="#adobeXDScreens">Adobe XD Screens</a></p>
+    <!-- <ul class="nestedList2"><li><a href="#adobeXDScreens">Adobe XD Screens</a></li></ul> -->
+    <p><a href="#build">Build</a></p>
+    <!-- <ul class="nestedList2"><li><a href="#build">Clickable Prototype</a></li></ul> -->
+    <p><a href="#build">Clickable Prototype</a></p>
+  </section>
   <section class="majorContents">
-    <h2>Background</h2>
+    <h2 id="background">Background</h2>
     <p>This is a full-fledged user-centric re-design project for a local pizzeria website.</p>
-    <p>The existing pizzeria website, as can be seen <a href="https://www.ajstoneovenpizzeria.com/" target="_blank" style="text-decoration:underline;">here</a> has been built with the bare essentials like a marketing flyer than like a proper online website. The website carries the restaurant's menu card and displays the bare essential store information (location, directions, store timings, services they provide etc...) serving as a mere business card. It offers no scope of shortlisting items, or comparing prices, to be able to place an order in an organized manner. All these shortcoming called for a user-centric re-architecture of the website.</p>
-    <p>The re-design is intended to improve the user experience by listing all the menu items and their prices legibly and making them easily accessible for the potential customers to browse and choose what they decide to order. As per the business specifications, it supports call-in order for0 now. The customers can enabled to shortlist all the items they plan to order which generates a wishlist that serves as a mock order allowing price comparison before proceeding to place the call-in order.</p>
-    <h2>Process</h2>
+    <p>The existing pizzeria website, as can be seen <a href="https://www.ajstoneovenpizzeria.com/" target="_blank" style="text-decoration:underline;">here</a> has been built with the bare essentials like a marketing flyer than like a proper online website. The website carries the restaurant's menu card and displays the bare essential store information (location, directions, store timings, services they provide etc...) serving as a mere business card. It offers no scope of short listing items, or comparing prices, to be able to place an order in an organized manner. These entire shortcomings called for a user-centric re-architecture of the website.</p>
+    <p>The re-design is intended to improve the user experience by listing all the menu items and their prices legibly and making them easily accessible for the potential customers to browse and choose what they decide to order. As per the business specifications, it supports call-in order for now. The customers can enabled to shortlist all the items they plan to order which generates a wish list that serves as a mock order allowing price comparison before proceeding to place the call-in order.</p>
+    <h2 id="process">Process</h2>
     <p>An iterative approach is taken with the overall process consisting of the following phases:</p>
-    <img class="processImage_web" src="resources/pizzeria/process.png" alt=" process">
+    <img class="openOnClick processImage_web" src="resources/pizzeria/process.png" alt=" process">
     <img class="processImage_responsive" src="resources/pizzeria/processResponsive.jpg" alt="process">
-    <!-- <p><b>Motivation: </b>The potential issues in the current website are identified, the business and user goals are defined and synced. The user and task analysis is performed which gives the various key features to be included are then they are prioritized.</p> -->
-    <h2>Motivation</h2>
+    <h2 id="analysis">Analysis</h2>
     <p>The current website is analyzed and the potential issues are identified and listed. The business goals are defined along with the things that have to be considered when re-designing the new version of the website.</p>
     <p><b>Business Goals :</b></p>
     <ul class="nestedList1">
@@ -112,9 +155,9 @@
         <li><b>Satisfaction:</b> How pleasant is it to use the design?</li>
       </ul>
     </ul>
-    <h2>Research</h2>
+    <h2 id="research">Research</h2>
     <p><b>Market Research : </b>I began by looking for already existing pizzeria websites that did well in the market - mainly Domino's, Pizza Hut and Papa John's International based on <a href="https://www.pizzatoday.com/pizzeria-rankings/2018-top-100-pizza-companies/" target="_blank" style="text-decoration: underline dashed;">pizzatoday's survey, 2018</a>. Based on those websites, I listed out the most important and basic features that are found on all of them in common.</p>
-    <p><b>User Surveys : </b>The next step was to back this up with some user research, to see if this was something others might be interested in and what information and features the cutomers might be looking for in a pizzeria website. I started by making a simple
+    <p><b>User Surveys : </b>The next step was to back this up with some user research, to see if this was something others might be interested in and what information and features the customers might be looking for in a pizzeria website. I started by making a simple
       <abbr title="A survey is a qualitative research method that consists of a set of questions that helps to collect specific information from a representative sample of target audience on their behaviours, thoughts and opinions.">survey</abbr>
       using Google Forms and sending it out to friends, colleagues and strangers over social media, who would be potential pizza buyers. </p>
       <div>
@@ -132,11 +175,13 @@
         </section>
       </div>
       <p>From the user research surveys, it is clear that most of the people prefer to place call-in orders for pizza, sandwiches and salads. The most looked up information includes the menu, location, hours of operation, and deals available. They choose the pizza place based on the distance, recommendation from a friend and ratings from google/yelp/trip advisor.  </p>
-      <h3><b><u>User Analysis - Personas</u></b></h3>
-      <p>From the user research and market research, I learned that irrespective of the demographics, the consumer needs for a pizzeria had mostly similar needs and frustrations. So I pictured one persona clubbing the characterics of a potential pizzeria customer.</p>
+      <!-- <h3 id="persona"><b><u>User Analysis - Personas</u></b></h3> -->
+      <p id="persona"><b>User Analysis - Personas :</b></p>
+      <p>From the user research and market research, I learned that irrespective of the demographics, the consumer needs for a pizzeria had mostly similar needs and frustrations. So I pictured one persona clubbing the characteristics of a potential pizzeria customer.</p>
       <img class="pizzeriaPersona openOnClick" src="resources/pizzeria/pizzeriaPersona1.jpg" alt="persona">
-      <h3><b><u>Task Analysis - Major Scenarios</u></b></h3>
-      <p>All the major senarios are determined based on the most important tasks Badger, our primary persona chooses to do when visting the website which is primarily determined from the research survey result . The tasks are then ordered based on the possible frequencies they would be performed in.</p>
+      <!-- <h3 id="features"><b><u>Task Analysis - Major Scenarios</u></b></h3> -->
+      <p id="features"><b>Task Analysis - Major Scenarios :</b></p>
+      <p>All the major scenarios are determined based on the most important tasks Badger, our primary persona chooses to do when visiting the website which is primarily determined from the research survey result. The tasks are then ordered based on the possible frequencies they would be performed in.</p>
       <ol class="senarioSection nestedList1">
         <li>Finding a pizzeria that are trusted by others</li>
         <li>Checking the menu </li>
@@ -148,7 +193,8 @@
         <li>Looking for a pizzeria close by</li>
         <li>Checking the pizzeria store hours</li>
       </ol>
-      <h3><b><u>Feature Requirements</u></b></h3>
+      <!-- <h3><b><u>Feature Requirements</u></b></h3> -->
+      <p><b>Feature Requirements :</b></p>
       <p>Based on the task analysis, the features required to be included in the design that aids in performing each task are thought of and listed:</p>
       <ol class="nestedList2">
         <li>
@@ -188,7 +234,8 @@
           <b>Features:</b> Display store hours <br><br>
         </li>
       </ol>
-      <h3><b><u>Consolidation of Feature List</u></b></h3>
+      <!-- <h3><b><u>Consolidation of Feature List</u></b></h3> -->
+      <p><b>Consolidation of Feature List :</b></p>
       <p>Based on the above feature listing, all the required features for the webapp are consolidated and prioritized as follows:</p>
       <ol class="senarioSection nestedList2">
         <li>Display of menu items</li>
@@ -196,21 +243,23 @@
         <li>Display of ratings/testimonials/awards</li>
         <li>Pictures of food with their names displayed</li>
         <li>Specification of payment modes accepted</li>
-        <li>Display speciality menu</li>
+        <li>Display specialty menu</li>
         <li>Specification of discounts/coupons/promo codes</li>
         <li>Specification of maps/directions</li>
         <li>Display store hours</li>
         <li>Display of order completion time</li>
       </ol>
-      <h3><b><u>Information Architecture</u></b></h3>
+      <!-- <h3 id="informationArchitecture"><b><u>Information Architecture</u></b></h3> -->
+      <p id="informationArchitecture"><b>Information Architecture :</b></p>
       <p>The information architecture with all the features listed in the above process is then decided. The primary information and hierarchy is then done which summarizes as follows:</p>
       <div class="IASection">
         <img class="openOnClick" src="resources/pizzeria/IA1.png" alt="information architecture">
         <img class="openOnClick" src="resources/pizzeria/IA2.jpeg" alt="information architecture">
       </div>
-      <h2>Low fidelity Wireframes</h2>
+      <h2 id="lowFidelity">Low fidelity Wireframes</h2>
       <p>Following the research summary and information architecture, I came up with multiple rough sketches of what the wireframes of each page would look like. With multiple iterations of sketches, I was able to make the UX lean by segregating the essentials from the unimportant elements were getting more and more clear. The multiple wireframes were then compared and the best design was chosen which served as the primary base design for the final website.</p>
-      <h3><b><u>Paper Prototypes</u></b></h3>
+      <!-- <h3><b><u>Paper Prototypes</u></b></h3> -->
+      <p id="paperPrototype"><b>Paper Prototypes</b></p>
       <p>Below are the fine tuned paper prototypes that serve as the templates for most of the basic use cases :</p>
       <div class="paperPrototypeRows">
         <iframe src="https://www.youtube.com/embed/9mBFP5pqxOc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -226,8 +275,9 @@
         <button class="sliderButton" onclick="plusDivs2(1)">&#10095;</button>
       </div>
       <iframe id="paperPrototypeVideo4Mob" src="https://www.youtube.com/embed/9mBFP5pqxOc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h3><b><u>Design Rationale</u></b></h3>
-      <p>From multiple prototypes for each page, the best one is chosen based on the survery results as well as competitor research. More detailed rationale for each feature placement is indicated below: </p>
+      <!-- <h3><b><u>Design Rationale</u></b></h3> -->
+      <p><b>Design Rationale</b></p>
+      <p>From multiple prototypes for each page, the best one is chosen based on the survey results as well as competitor research. More detailed rationale for each feature placement is indicated below: </p>
       <div class="paperPrototypeRows">
         <img class="openOnClick" src="resources/pizzeria/rationaleWireframe1.jpg" alt="paper prototype design rationale">
         <img class="openOnClick" src="resources/pizzeria/rationaleWireframe2.jpg" alt="paper prototype design rationale">
@@ -240,7 +290,8 @@
         <img class="mySlides4 openOnClick" src="resources/pizzeria/rationaleWireframe3.jpg" alt="design rationale">
         <button class="sliderButton" onclick="plusDivs4(1)">&#10095;</button>
       </div>
-      <h3><b><u>Balsamiq Wireframe</u></b></h3>
+      <!-- <h3><b><u>Balsamiq Wireframe</u></b></h3> -->
+      <p id="balsamiqWireframes"><b>Balsamiq Wireframe</b></p>
       <p>Below is a set of wireframes based on the paper prototype. There are a total of 16 pages for the website and all of them are wireframed using Balsamiq.</p>
       <div class="wireframeImgRows">
         <img class="openOnClick" src="resources/pizzeria/1FullHomePage.png" alt="wireframe">
@@ -311,9 +362,10 @@
         <img class="mySlides3 openOnClick" src="resources/pizzeria/16MobileMyList.png" alt="mobile responsive wireframe">
         <button class="sliderButton" onclick="plusDivs3(1)">&#10095;</button>
       </div>
-      <h2>High fidelity Prototype</h2>
+      <h2 id="highFidelity">High fidelity Prototype</h2>
       <p>The specifications for high fidelity prototype are decided considering the human factors for experience design.</p>
-      <h3><b><u>Design Rationale</u></b></h3>
+      <!-- <h3><b><u>Design Rationale</u></b></h3> -->
+      <p><b>Design Rationale</b></p>
       <div class="paperPrototypeRows">
         <img class="openOnClick" src="resources/pizzeria/rationaleWireframe4.jpg" alt="design rationale">
         <img class="openOnClick" src="resources/pizzeria/rationaleWireframe5.jpg" alt="design rationale">
@@ -326,7 +378,8 @@
         <img class="mySlides5 openOnClick" src="resources/pizzeria/rationaleWireframe6.jpg" alt="design rationale">
         <button class="sliderButton" onclick="plusDivs5(1)">&#10095;</button>
       </div>
-      <h3><b><u>Adobe XD screens</u></b></h3>
+      <!-- <h3><b><u>Adobe XD screens</u></b></h3> -->
+      <p id="adobeXDScreens"><b>Adobe XD screens</b></p>
       <div class="wireframeImgRows">
         <img class="openOnClick" src="resources/pizzeria/1HomePage.png" alt="pizzeria prototype">
         <img class="openOnClick" src="resources/pizzeria/2MenuPage.png" alt="pizzeria prototype">
@@ -336,8 +389,6 @@
         <img class="openOnClick" src="resources/pizzeria/6SpecialsPage.png" alt="pizzeria prototype">
         <img class="openOnClick" src="resources/pizzeria/7StartersPage.png" alt="pizzeria prototype">
         <img class="openOnClick" src="resources/pizzeria/8EntreesPage.png" alt="pizzeria prototype">
-        <!-- </div>
-        <div class="wireframeImgRows"> -->
         <img class="openOnClick" src="resources/pizzeria/9KidsEntréePage.png" alt="pizzeria prototype">
         <img class="openOnClick" src="resources/pizzeria/10ReviewsPage.png" alt="pizzeria prototype">
         <img class="openOnClick" src="resources/pizzeria/11AboutUsPage.png" alt="pizzeria prototype">
@@ -371,28 +422,30 @@
       <p>Below is the video clip demonstrating the user flow, using the website:</p>
       <iframe src="https://www.youtube.com/embed/e83FdjYd8DA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <h2>Build</h2>
-      <p>According to the process, the resources used in the high fidelity prototype are then shared for developement.</p>
+      <h2 id="build">Build</h2>
+      <p>According to the process, the resources used in the high fidelity prototype are then shared for development.</p>
       <div class="XDPrototypeLink">
-        <!-- <p>Click below to get a sense of the final pizzeria website : </p> -->
-        <p>Below is the functional version of the prototype : </p>
+        <p>Below is the functional version of the clickable interactive prototype : </p>
         <a href="https://xd.adobe.com/view/b2ec2e57-f224-4b0a-5b5b-432953329a68-c4dd/?fullscreen" target="_blank">
           <img title="Click me" style ="width:50%;border: 1px solid black;" src="resources/home/pizzeria.png" alt="pizzeria working prototype">
         </a>
       </div>
-    </section>
-  </main>
+      <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+        <a href="#pizzeriaHeader">
+          <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+        </a>
+      </div>
+
   <footer>
-    <div class="bottom-bar">
-      <span style="float: left;">&copy 2019 | All right reserved.</span>
-      <span style="float: right;">Hand coded and compiled by Lakshmy Jayalakshmy</span>
-    </div>
-    <div class="bottom-bar-mobile" style="text-align:center;">
-      <p>&copy 2019 | All right reserved.</p>
-      <p>Hand coded and compiled by Lakshmy Jayalakshmy</p>
+    <div class="bottom-bar" >
+      <p style="text-align:center;line-height:.5em;line-height:.5rem;">&copy 2019 | All right reserved.</p>
+      <p style="text-align:center;line-height:.5em;line-height:.5rem;">Hand coded and compiled by Lakshmy Jayalakshmy</p>
+      <!-- <p style="text-align:center;line-height:.rem;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
     </div>
   </footer>
-
+</section>
+</div>
+  </main>
   <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="js/commonScript.js" defer></script>
   <script>

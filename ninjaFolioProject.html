@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics START-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255160-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141255160-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics END-->
+
+  <meta charset="utf-8">
+  <title>Portfolio Project Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="resources/MyLogo_small.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css?v=1.1">
+  <link rel="stylesheet" href="css/projectsCommon.css?v=1.1">
+  <link rel="stylesheet" href="css/ninjaFolioStyle.css?v=1.1">
+</head>
+<body oncopy="return false" onpaste="return false" oncut="return false">
+  <aside>
+    <div class="imageLogo">
+      <img src="resources/ninjaFolio/MyLogo_small.jpg" alt="folio logo">
+    </div>
+    <nav id="mainNav">
+      <a href="home.html#home" onclick="setSelectedTab('home')"><i class="material-icons md-36">home</i><p>Home</p></a>
+      <a href="home.html#projects_division" class=selectedNav onclick="setSelectedTab('projects')"><i class="material-icons md-36">image</i><p>Projects</p></a>
+      <a href="home.html#about_division" onclick="setSelectedTab('about')"><i class="material-icons md-36">person</i><p>About</p></a>
+      <a href="home.html#contact_division" onclick="setSelectedTab('contact')"><i class="material-icons md-36">mail</i><p>Contact</p></a>
+    </nav>
+    <p id="navDescription"><i>
+      <b><u>PROJECTS</u></b><br>
+      I have worked on the following projects :<br>
+      <span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>
+      <span><b><a href="ninjaFolioProject.html">•	Online Portfolio</a></b></span><br>
+      <span><a href="utProject.html">•	Bentley.edu</a></span><br>
+      <span><a href="amazonProject.html">•	Amazon.com</a></span><br>
+      <span><a href="elderCareProject.html">•	Elder Care System</a></span><br>
+      <span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>
+    </i></p>
+  </aside>
+
+  <main>
+
+    <div id="MobPageTitle">
+      <img class="BGTitle4Mob" src="resources/ninjaFolio/codeHeroMob.jpg" alt="Mobile Page Title BG">
+      <button id="hamburgerBtn"><i class="fa">&#xf0c9;</i></button>
+      <h3 style="top:0;" class="PageTitle4Mob">Portfolio - UI/UX Design & Development</h3>
+    </div>
+    <div id="modalMenuDiv" class="modalMenuBG">
+      <nav id="mobNav">
+        <a href="home.html#home">Home</a>
+        <a href="home.html#projects_division">
+          Projects
+          &nbsp;;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="pizzeriaProject.html" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Pizzeria</a>
+        <a href="ninjaFolioProject.html" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Portfolio</a>
+        <a href="utProject.html" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Bentley.edu</a>
+        <a href="amazonProject.html" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Amazon.com</a>
+        <a href="elderCareProject.html" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Elder Care System</a>
+        <a href="dataAnalysisProject.html" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Online Banking</a>
+        <a href="home.html#about_division">
+          About
+          &nbsp;;<i class="fa fa-caret-down" style="font-size:16px;color:white;"></i>
+        </a>
+        <a href="home.html#credoSubDiv" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Credo</a>
+        <a href="home.html#skillsSubDiv" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Skillsets</a>
+        <a href="home.html#academicSubDiv" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Qualifications</a>
+        <a href="home.html#testiSubDiv" onclick="hideMenu()">&nbsp;;&nbsp;;•&nbsp;;Testimonials</a>
+        <a href="home.html#contact_division">Contact</a>
+      </nav>
+    </div>
+
+    <div id="modalBox" class="modal">
+      <div>
+        <input type="button" class="close zoomButton" value="&times">
+      </div>
+      <div id="modalImageContainer">
+        <img id="modalImage" class="modal-content">
+      </div>
+      <div style="text-align:center;">
+        <!-- <input type="button" class="close button" value="&times"> -->
+        <input type="button" id="zoomin" class="zoomButton" value="+"/>
+        <input type="button" id="zoomout" class="zoomButton" value="-"/>
+      </div>
+    </div>
+
+    <header id="ninjaFolioHeader">
+      <img src="resources/ninjaFolio/codeHero.jpg" alt="code hero image">
+      <h1 class="pageTitle">Portfolio - UI/UX Design & Development</h1>
+      <p>End-to-end user experience design, interface design, front-end development, testing and deployment of this responsive online portfolio </p>
+    </header>
+    <div class="detailsContainer">
+      <section class="projectIndex">
+        <p><u>SECTIONS</u></p>
+        <p><a href="#tech">Tools and Technologies</a></p>
+        <p><a href="#process">UX Process</a></p>
+        <p><a href="#research">Research and Analysis</a></p>
+        <p><a href="#personas">Defining Personas</a></p>
+        <p><a href="#tasks">Task Analysis</a></p>
+        <p><a href="#ia">Information Architecture</a></p>
+        <p><a href="#wireframes">Low Fidelity Wireframes</a></p>
+        <p><a href="#prototypes">High Fidelity Prototype</a></p>
+        <p><a href="#build">Build and Deployment</a></p>
+      </section>
+      <section class="majorContents">
+        <p>This website is an online repository of all the projects I have completed in UX / UI domains. Being a developer myself, I disliked the limitations in the instant web development platforms. So I decided to design and develop from scratch using client side scripting languages to be cross-browser compatible and responsive. </p>
+        <h3 id="tech">Tools and Technologies</h3><br>
+        <ul class="nestedList2">
+          <li><b>Design Tools :</b> Lucid Chart, Figma, Invision</li>
+          <li><b>Front-end Development :</b> HTML5, CSS3, JavaScript</li>
+          <li><b>Development Environment :</b> atom.io, Google Chrome, Chrome Developer Toolkit</li>
+          <li><b>Image and Video Editing Tools :</b> Photoshop, Microsoft Movie Maker, Windows Screen Recorder</li>
+          <li><b>Versioning and Deployment System :</b> Git, Github</li>
+          <li><b>Software Model :</b> Agile</li>
+        </ul><br>
+        <h3 id="process">UX Process</h3>
+        <p>The project follows agile methodology and has been designed in several MVPs. MVPs are further broken down into a set of related features that contribute to progressive development of the product. Every feature is a collection of user stories which are put through the process of UX design, UI development, testing, release and change control.</p>
+        <!-- <p> The first MVP is released with the basic information and project details. The project pages and tiles are added and updated as and when they are completed and new releases are published in production after testing.</p> -->
+        <h3 id="research">Research and Analysis</h3>
+        <p>I started out by creating a mind map focusing thoughts on the contents of the portfolio as depicted below: </p>
+        <img style="width:90%;" src="resources/ninjaFolio/mindmap.jpg" alt="mindmap for portfolio">
+        <p><b>Market Research :</b> I identified UX portfolios of successful UX practitioners and surveyed the layouts used, the details included and the structure followed and formed a mental template of organizing the contents.</p>
+        <!-- <p>The characteristics of an ideal portfolio are then  from job descriptions listed out in major job portals : indeed, glassdoor, ziprecruiter and checked out on the careers pages of company websites. I ensured to list out all the skillsets I had and that expected out in the market easily accessible in the website.</p> -->
+        <p>I also extensively looked through the job descriptions for the roles that I would be suitable for and align the information in a way that a potential employer to get to it with less effort.</p>
+        <h3 id="personas">Defining Personas</h3>
+        <p>The purpose of this portfolio is to showcase my projects highlighting my experiences and knowledge in UI/UX platforms. Hence the major users of my portfolio would be human resource managers, hiring managers and peer workers.</p>
+        <img class="openOnClick" src="resources/ninjaFolio/ninjaFolioPersonas.jpg" alt="folio code personas">
+        <h3 id="tasks">Task Analysis</h3>
+        <p>All the primary tasks for each of the user profiles are listed and the features are then consolidated and prioritized:</p>
+        <!-- <p>Tasks for Lucy Green, the human resource manager would be immediate access to resume, skillsets, projects and contact information</p>
+        <p>Tasks for Jack Anderson, the hiring manager would be skillsets and projects that are brief and clearly defines the process followed, visual and verbal walk-through of various life cycle phases </p>
+        <p>Tasks for Emily Jacob, the peer worker would be similar to that of Jack Anderson the details all the projects with no  </p> -->
+        <ol class="nestedList2">
+          <li>'Best At' statement on the home / landing page </li>
+          <li>Project Tile display from the landing page </li>
+          <li>Short description of each projects on the landing page </li>
+          <li>About section with credo, strengths, weakness, short-term and long-term goals, hobbies</li>
+          <li>Skillsets - categorized based on job roles pointing out the expertise on each </li>
+          <li>Qualifications listing the academics, experiences, certifications and competencies displaying appropriate supporting documents </li>
+          <li>Testimonials / citations / letter of recommendations </li>
+          <li>Contact details - email / mobile number / Linkedin</li>
+          <li>Project pages : process, visual and verbal descriptions</li>
+          <li>Clickable index of sub-sections inside each project for easy access across the page</li>
+          <li>Navigations / sub-navigations accessible anywhere from the website</li>
+        </ol>
+        <h3 id ="ia">Information Architecture</h3>
+        <p>Based on the user profiles, the primary tasks performed by them and the tasks along with the features, the pages are decided and the information architecture is designed : </p>
+        <img style="width:75%;" class="openOnClick" src="resources/ninjaFolio/portfolioIA.jpeg" alt="portfolio information architecture">
+        <h3 id ="wireframes">Low Fidelity Wireframes</h3>
+        <div>
+          <p>Initially I drafted various possibilities of displaying projects clearly and immediately catching the attention of the user profiles. One page layout is chosen with side bar navigation that enables users to scroll as well as click on various sections to visit them.</p>
+          <p>The projects were tried out to be listed horizontally as well as vertically. By placing vertically, more description about each project could be described in the home page itself but eats up whole lot of space that increases scroll area. Placing it vertically and making it peek on the landing page; enables more projects to be displayed without scrolling at the same time, descriptions could be placed right below it. </p>
+          <p>The design is then refined and the low fidelity prototypes for the home page and projects page for both desktop and mobile are sketched in invision. The projects page would serve as a template for all the projects to be displayed. </p>
+          <section class="wireframeRows">
+            <img class="openOnClick" src="resources/ninjaFolio/freeHand1.jpg" alt="folio low fidelity prototype">
+            <img class="openOnClick" src="resources/ninjaFolio/freeHand2.jpg" alt="folio low fidelity prototype">
+            <img style="max-width:10%;" class="openOnClick" src="resources/ninjaFolio/freeHandMob1.jpg" alt="folio low fidelity prototype">
+            <img style="max-width:10%;" class="openOnClick" src="resources/ninjaFolio/freeHandMob2.jpg" alt="folio low fidelity prototype">
+          </section>
+          <section class="wireframeRowsMob">
+            <button class="sliderButton" onclick="plusDivs(-1)">&#10094;</button>
+            <img class="openOnClick mySlides" src="resources/ninjaFolio/freeHand1.jpg" alt="folio low fidelity prototype">
+            <img class="openOnClick mySlides" src="resources/ninjaFolio/freeHand2.jpg" alt="folio low fidelity prototype">
+            <img class="openOnClick mySlides" src="resources/ninjaFolio/freeHandMob1.jpg" alt="folio low fidelity prototype">
+            <img class="openOnClick mySlides" src="resources/ninjaFolio/freeHandMob2.jpg" alt="folio low fidelity prototype">
+            <button class="sliderButton" onclick="plusDivs(1)">&#10095;</button>
+          </section>
+        </div>
+        <h3>High Fidelity Prototype</h3>
+        <div id ="prototypes">
+          <p style="float:left;" >The high fidelity prototype is then designed for both desktop and mobile in figma </p>
+          <br><br><br>
+          <section class="prototypeRows">
+            <img class="openOnClick" src="resources/ninjaFolio/hfHome.png" alt="folio high fidelity prototype">
+            <img class="openOnClick" src="resources/ninjaFolio/hfElderCare.png" alt="folio high fidelity prototype">
+            <img style="max-width:10%;" class="openOnClick" src="resources/ninjaFolio/hfHomeResponsive.png" alt="folio high fidelity prototype">
+            <img style="max-width:10%;" class="openOnClick" src="resources/ninjaFolio/hfElderCareResponsive.png" alt="folio high fidelity prototype">
+          </section>
+          <section class="prototypeRowsMob">
+            <button class="sliderButton" onclick="plusDivs1(-1)">&#10094;</button>
+            <img class="openOnClick mySlides1" src="resources/ninjaFolio/hfHome.png" alt="folio high fidelity prototype">
+            <img class="openOnClick mySlides1" src="resources/ninjaFolio/hfElderCare.png" alt="folio high fidelity prototype">
+            <img class="openOnClick mySlides1" src="resources/ninjaFolio/hfHomeResponsive.png" alt="folio high fidelity prototype">
+            <img class="openOnClick mySlides1" src="resources/ninjaFolio/hfElderCareResponsive.png" alt="folio high fidelity prototype">
+            <button class="sliderButton" onclick="plusDivs1(1)">&#10095;</button>
+          </section>
+        </div>
+        <h3>Build and Deployment</h3>
+        <div id="build">
+          <p>The resources from the high fidelity prototype are then exported for development. Coding is done in Atom.io text editor. Proper folder structure is maintained :</p>
+          <ul class="nestedList2">
+            <li>HTML files are saved directly inside the root folder</li>
+            <li>CSS files are saved inside a folder named 'css' under the root folder</li>
+            <li>Image and video files are saved inside a folder named 'resources' under the root folder. Project specific files are then categorized into individual folders.</li>
+          </ul>
+          <p>After coding the first MVP, the code is committed in git using the git bash and then pushed remotely to github. This website is hosted in mochahost. The committed code is then deployed via cpanel to get updated on the domain.</p>
+          <p>New branches are created from the repository where code enhancements are made. It is then tested in the localhost and then committed in the production environment. </p>
+        </div>
+
+        <div style="text-align:center;margin:3em 0;margin:3rem 0;">
+          <a href="#ninjaFolioHeader">
+            <i class="fa fa-long-arrow-up" style="color:#190654;padding:1em;padding:1rem;">&nbsp;&nbsp;Move To Top</i>
+          </a>
+        </div>
+        <footer>
+          <div class="bottom-bar" >
+            <p style="text-align:center;line-height:.5em;line-height:.5rem;">&copy; 2019 | All right reserved.</p>
+            <p style="text-align:center;line-height:.5em;line-height:.5rem;">Hand coded and compiled by Lakshmy Jayalakshmy</p>
+            <!-- <p style="text-align:center;line-height:.rem;line-height:.5rem;">Please use Google Chrome or Mozilla Firefox for optimized views</p> -->
+          </div>
+        </footer>
+      </section>
+    </div>
+  </main>
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/commonScript.js"></script>
+  <script>
+  /*Image slideshow START - 1st slider*/
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  /*Image slideshow END - 1st slider*/
+
+  /*Image slideshow START - 2nd slider*/
+  var slideIndex1 = 1;
+  showDivs1(slideIndex1);
+
+  function plusDivs1(n1) {
+    showDivs1(slideIndex1 += n1);
+  }
+
+  function showDivs1(n1) {
+    var i1;
+    var x1 = document.getElementsByClassName("mySlides1");
+    if (n1 > x1.length) {slideIndex1 = 1}
+    if (n1 < 1) {slideIndex1 = x1.length}
+    for (i1 = 0; i1 < x1.length; i1++) {
+      x1[i1].style.display = "none";
+    }
+    x1[slideIndex1-1].style.display = "block";
+  }
+  /*Image slideshow END - 2nd slider*/
+  </script>
+</body>
+</html>
