@@ -11,7 +11,7 @@ function setSelectedTab(selected){
     document.getElementById('mainNav').querySelectorAll("a")[0].className = "selectedNav";
     texttoshow = '<i>'+
     '<b>WELCOME</b><br>'+
-    'Thanks for visiting my site...<br>'+
+    'Thank you for visiting my site...<br>'+
     'Scroll down or use the navigation to browse through my portfolio and learn more about me...'+
     '</i>';
   }
@@ -31,8 +31,9 @@ function setSelectedTab(selected){
     '<b><u>PROJECTS</u></b><br>'+
     'I have worked on the following projects : <br>'+
     '<span><a href="pizzeriaProject.html">•	Pizzeria</a></span><br>'+
-    '<span><a href="amazonProject.html">•	Amazon.com</a></span><br>'+
+    '<span><a href="ninjaFolioProject.html">•	Online Portfolio</a></span><br>'+
     '<span><a href="utProject.html">•	Bentley.edu</a></span><br>'+
+    '<span><a href="amazonProject.html">•	Amazon.com</a></span><br>'+
     '<span><a href="elderCareProject.html">• Elder Care System</a></span><br>'+
     '<span><a href="dataAnalysisProject.html">•	Online Banking</a></span><br>'+
     '</i>';
@@ -55,7 +56,7 @@ function setSelectedTab(selected){
     document.getElementById('mainNav').querySelectorAll("a")[3].className = "selectedNav";
     texttoshow = '<i>'+
     '<b><u>CONTACT</u></b><br>'+
-    'Reach me by sending a message'+
+    'To reach me, <br>drop an email, <br>message on linkedin, <br>give a call or <br>leave a text'+
     '</i>';
   }
   document.getElementById("navDescription").innerHTML = texttoshow;
