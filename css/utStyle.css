@@ -1,7 +1,7 @@
 /*utStyle.css*/
-header img{
+/* header img{
   -webkit-filter: opacity(10%);
-}
+} */
 h1, h3, h4{
   margin: 1em auto;
   margin: 1rem auto;
@@ -31,12 +31,12 @@ transform: scale(1.03);
     margin:0;
     width:100%;
   }
-  #hamburgerBtn{
+  /* #hamburgerBtn{
     position:absolute;
     padding: 0;
     margin: .5em;
     margin: .5rem;
-  }
+  } */
   header{
     position:relative;
     margin: 0;

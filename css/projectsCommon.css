@@ -2,6 +2,10 @@
 
 main{
   margin-left: 250px;
+  display: inline-block;
+}
+.pageTitle{
+    display: block;
 }
 header{
   height: 250px;
@@ -40,10 +44,14 @@ header p{
   /* transform: translate(-50%, -50%); */
 }
 .majorContents{
-  max-width: 980px;
+  /* max-width: 980px; */
+  max-width: 710px;
   text-align: left;
   margin: 2em;
   margin: 2rem;
+  margin-bottom: 0;
+  margin-right: 18em;
+  margin-right: 18rem;
 }
 .majorContents h2{
   font-size: 1.25em;
@@ -56,72 +64,53 @@ header p{
   margin: 1em 0;
   text-align: justify;
 }
-/* .majorContents img{
-  transition:1s;
-  cursor: pointer;
-}
-.majorContents img:hover{
-transform: scale(1.1);
-} */
 
-/*Accordion START*/
-/* .nestedList1{
-  line-height: 150%;
-  padding-left: 1em;
-  padding-left: 1rem;
-}
-.nestedList2{
-  padding-left: 2em;
-  padding-left: 2rem;
-}
-.nestedList3{
-  padding-left: 3em;
-  padding-left: 3rem;
-}
-.accordion {
-  cursor: pointer;
-  margin-top: 1em;
-  margin-top: 1rem;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: opacity 10s ease-out;
-  border-radius: 0;
-  background-color: #38C1D2;
-  color:#190654;
-}
-.accordion:after {
-  content: '+';
-  color: #190654;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-.active:after {
-  content: "-";
-}
-.active, .accordion:hover{
-  color: black;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  // color: #009688;
-  // transition: opacity 2s ease-out;
-}
-.panel {
-  padding: 20px 18px;
-  display: none;
-  border: 1px solid #190654;
-  overflow: hidden;
-  // width:80%; 
-} */
-/*Accordion END*/
 .majorContents iframe{
   width:"560";
   height:"315";
 }
-
+.projectIndex{
+  float: right;
+  border: 1px solid;
+  padding:1.5em;
+  padding:1.5rem;
+  margin: 1em;
+  margin: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  right: 20px;
+  max-width:18em;
+  max-width:18rem;
+  display: block;
+  line-height:1.5rem;
+  border: 1px solid ;
+  font-size: .85em;
+  font-size: .85rem;
+  /* box-shadow: 4px 4px 8px #38C1D2; */
+  /* width: 175px; */
+  /* left:1000px; */
+  /* display: block; */
+  /* height:100px; */
+}
+@media (max-width: 850px) {
+  .projectIndex{
+    display: none;
+  }
+  .majorContents{
+      width:70%;
+  }
+}
 @media (max-width: 601px) {
   .majorContents iframe{
     width:100%;
+  }
+ .pageTitle{
+      /* display: none; */
+      visibility: hidden;
+      padding: 0;
+  }
+  .projectIndex{
+      display: none;
   }
 }

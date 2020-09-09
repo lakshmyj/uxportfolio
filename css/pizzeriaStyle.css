@@ -4,26 +4,44 @@ h3{
   padding: 1rem 0;
 }
 header img{
-  -webkit-filter: opacity(25%) blur(1px);
+  /* -webkit-filter: opacity(25%) blur(1px); */
   width:100%;
 }
+ .majorContents{
+     /* max-width: 70%; */
+     margin-right: 18em;
+     margin-right: 18rem;
+}
+
 .processImage_responsive{
   display: none;
 }
 .researchImgRows, .paperPrototypeRows{
   display:flex;
+  display:-webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 .researchImgRows img, .paperPrototypeRows img{
   object-fit:fill;
   overflow:hidden;
-  height:90%;
+  /* height:90%; */
   /* width:100%; */
   flex:1;
+  -webkit-flex:1;
   margin:.6em;
   transition:1s;
   cursor: pointer;
 }
+.researchImgRows img{
+  height:25%;
+  max-width:50%;
+}
+.paperPrototypeRows img{
+  height:50%;
+  max-width:30%;
+}
+
 .researchImgRows img:hover,
 .pizzeriaPersona:hover,
 .IASection img:hover,
@@ -39,12 +57,15 @@ header img{
 }
 .IASection{
   display: flex;
+  display:-webkit-flex;
   align-items: center;
   overflow: hidden;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 .IASection img{
   flex:1;
+  -webkit-flex:1;
   object-fit:fill;
   overflow: hidden;
   padding: .5% 1%;
@@ -59,18 +80,21 @@ header img{
 }
 .wireframeImgRows{
   display: flex;
+  display:-webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex: wrap;
 }
 .wireframeImgRows img{
   flex-wrap: wrap;
-  width:10%;
+  -webkit-flex-wrap: wrap;
+  width:12%;
   height:20%;
   margin:.6em;
   transition:1s;
   cursor: pointer;
 }
 .responsiveScreens img{
-  width:7%;
+  width:12%;
 }
 #paperPrototypeVideo4Mob{
   display: none;
@@ -85,12 +109,12 @@ header img{
     /* top:0;
     left:0; */
   }
-  #hamburgerBtn{
+  /* #hamburgerBtn{
     position:absolute;
     padding: 0;
     margin: .5em;
     margin: .5rem;
-  }
+  } */
   header{
     position:relative;
     margin: 0;
@@ -99,6 +123,7 @@ header img{
   }
   header > img{
     width:100%;
+    /* z-index:1; */
   }
   header > h1{
     font-size: 1.5em;
@@ -114,9 +139,13 @@ header img{
   }
   .majorContents{
     position:static;
+    margin-right: 1em;
+    margin-right: 1rem;
   }
+
   .IASection img, .researchImgRows img{
     flex:auto;
+    -webkit-flex:auto;
     width:100%;
   }
   .wireframeImgRows, .paperPrototypeRows{
@@ -124,6 +153,7 @@ header img{
   }
   .pizzeriaImageSlider{
     display: flex;
+    display:-webkit-flex;
     width:100%;
     float:left;
     align-items: center;

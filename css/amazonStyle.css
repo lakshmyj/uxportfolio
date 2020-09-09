@@ -1,7 +1,7 @@
 /*amazonStyle.css*/
-header img{
+/* header img{
   -webkit-filter: opacity(10%) blur(3px);
-}
+} */
 .majorContents img{
   width: 25%;
   margin: 2em auto;
@@ -13,14 +13,21 @@ header img{
 .majorContents img:hover, .imgFlex img:hover{
 transform: scale(1.03);
 }
+.projectIndex{
+  max-width:12em;
+  max-width:12rem;
+}
 .imgFlex{
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   overflow: hidden;
   flex-wrap: wrap;
+  -webkit-flex-wrap:wrap;
 }
 .imgFlex img{
   flex:1;
+  -webkit-flex:1;
   object-fit:fill;
   overflow: hidden;
   padding: .5% 1%;
@@ -36,12 +43,12 @@ transform: scale(1.03);
     /* top:0;
     left:0; */
   }
-  #hamburgerBtn{
+  /* #hamburgerBtn{
     position:absolute;
     padding: 0;
     margin: .5em;
     margin: .5rem;
-  }
+  } */
   header{
     position:relative;
     margin: 0;
@@ -73,6 +80,8 @@ transform: scale(1.03);
   }
   .imgFlex img{
     flex:auto;
+    -webkit-flex:auto;
     width:100%;
   }
+
 }
