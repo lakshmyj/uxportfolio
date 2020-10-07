@@ -10,6 +10,7 @@
 /* header, #projects_division, #about_division, #contact_division{ */
 body{
   background-image: url(homeHero.jpg);
+  background-attachment: fixed;
 }
 #home{
   margin-left: 250px;
